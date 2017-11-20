@@ -12,25 +12,31 @@ import PureLayout
 class HomeTableViewCell: UITableViewCell {
 
     var apiNameLabel: UILabel!
+    
     var statusContainer: UIView!
+    
     var statusLabel: UILabel!
+    
     var lastTimeCheckedLabel: UILabel!
+    
+    
+    
     
     func setupCell( api: ApiDTO){
         
         self.apiNameLabel = UILabel()
         self.apiNameLabel.text = api.apiName
+        self.apiNameLabel.font = UIFont.systemFont(ofSize: 20)
         self.apiNameLabel.textColor = .black
         self.addSubview(self.apiNameLabel)
         
         self.statusContainer = UIView()
         self.addSubview(self.statusContainer)
         
-        
         self.statusLabel = UILabel()
         self.statusLabel.text = api.apiStatus?.statusText
         self.statusLabel.textColor = api.getBackgorundColor()
-        self.statusLabel.font = UIFont.systemFont(ofSize: 30)
+        self.statusLabel.font = UIFont.systemFont(ofSize: 21)
         self.statusContainer.addSubview(self.statusLabel)
         
         self.lastTimeCheckedLabel = UILabel()
@@ -66,6 +72,5 @@ class HomeTableViewCell: UITableViewCell {
         self.lastTimeCheckedLabel.autoPinEdge(.left, to: .left, of: self, withOffset: 10)
 
         self.lastTimeCheckedLabel.autoPinEdge(.bottom, to: .bottom, of: self, withOffset: -10)
-
     }
 }
