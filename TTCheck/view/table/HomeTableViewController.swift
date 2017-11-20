@@ -25,6 +25,10 @@ class HomeTableViewController: UITableViewController {
        
         self.tableView.register(HomeTableViewCell.self, forCellReuseIdentifier: "homeCell")
         self.tableView.contentInset = .init(top: 64, left: 0, bottom: 0, right: 0)
+        self.title = "ttcheck"
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Update", style: .plain, target: self, action: #selector(update))
+
         
         if #available(iOS 11.0, *) {
             self.tableView.contentInsetAdjustmentBehavior = .never
@@ -58,8 +62,10 @@ class HomeTableViewController: UITableViewController {
 
         
    }
-
-
+    
+    @objc private func update(){
+        self.tableView.reloadData()
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

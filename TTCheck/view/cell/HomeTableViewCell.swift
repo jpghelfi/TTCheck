@@ -28,6 +28,7 @@ class HomeTableViewCell: UITableViewCell {
         self.statusLabel = UILabel()
         self.statusLabel?.text = api.apiStatus?.statusText
         self.statusLabel?.textColor = .black
+        self.statusLabel?.backgroundColor = api.getBackgorundColor()
         if let status = self.statusLabel{
             self.addSubview(status)
             
@@ -40,20 +41,22 @@ class HomeTableViewCell: UITableViewCell {
             self.addSubview(last)
             
         }
-        self.backgroundColor = api.getBackgorundColor()
+//        self.backgroundColor = api.getBackgorundColor()
         
         self.setupConstraints()
     }
     
     private func setupConstraints() -> Void {
-        self.apiNameLabel?.autoPinEdge(.left, to: .left, of: self)
+        self.apiNameLabel?.autoPinEdge(.left, to: .left, of: self, withOffset: 10)
+        self.apiNameLabel?.autoPinEdge(.top, to: .top, of: self, withOffset: 10)
         
+        self.statusLabel?.autoPinEdge(.right, to: .right, of: self, withOffset: -10)
+        self.statusLabel?.autoPinEdge(.top, to: .top, of: self, withOffset: 10)
         
-        self.statusLabel?.autoPinEdge(.left, to: .left, of: self)
+        self.lastTimeCheckedLabel?.autoPinEdge(.left, to: .left, of: self, withOffset: 10)
         
-        if let name = self.apiNameLabel{
-            self.statusLabel?.autoPinEdge(.top, to: .bottom, of: name)
-            self.lastTimeCheckedLabel?.autoPinEdge(.bottom, to: .bottom, of: self)
+        if let status = self.statusLabel{
+            self.lastTimeCheckedLabel?.autoPinEdge(.top, to: .bottom, of: status, withOffset: 10)
         }
     }
 }
