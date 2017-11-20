@@ -8,17 +8,41 @@
 
 import Foundation
 import UIKit
+import TTMVC
 
-class StatusDTO {
+class StatusDTO: TTGenericDTO {
     
     private var isLive: Bool?
     var statusText: String?
     var color: UIColor?
     
     init(status: Bool) {
-        
+        super.init()
         self.isLive = status
         self.setColor()
+    }
+    
+    init(statusNumber: NSNumber) {
+        super.init()
+        self.isLive = setStatusValue(number: statusNumber)
+        self.setColor()
+    }
+    
+    private func setStatusValue(number: NSNumber) -> Bool{
+        
+        if number == 1{
+            return false
+        }else{
+            return true
+        }
+    }
+    
+    required init?(dictionary: [String : AnyObject]) {
+        fatalError("init(dictionary:) has not been implemented")
+    }
+    
+    required init() {
+        fatalError("init() has not been implemented")
     }
     
     private func setColor(){
@@ -26,12 +50,10 @@ class StatusDTO {
             
             if live{
                 self.statusText = "OK"
-//                self.color = UIColor(hexString: "#d1ffdd")
                 self.color = .green
             }else{
                 
                 self.statusText = "ERROR"
-//                self.color = UIColor(hexString: "ff85a2")
                 self.color = .red
             }
         }

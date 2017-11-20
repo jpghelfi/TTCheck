@@ -29,6 +29,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>TTMVC.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -37,12 +42,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>550991892BBCF70511C6CC00A90E5F5F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>82A01EA6A5D401D0264B531BE9AE6EBB</key>
+		<key>60ECE73C6FB3B3818011402655B0AEE5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -53,6 +53,16 @@
 			<true/>
 		</dict>
 		<key>89322872DD863F9379AB00920064EFDA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AA5BEFC6D649403F582964E3A0CD315F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B56A66E5470C68F5DF1AA3B8C0812F69</key>
 		<dict>
 			<key>primary</key>
 			<true/>

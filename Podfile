@@ -7,6 +7,7 @@ target 'TTCheck' do
   
   pod 'PureLayout'
   pod 'Alamofire'
+  pod 'TTMVC'
 
   # Pods for TTCheck
 

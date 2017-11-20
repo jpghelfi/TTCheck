@@ -8,14 +8,16 @@
 
 import Foundation
 import Alamofire
+import TTMVC
 
-class ApiDAO {
+class ApiDAO: TTGenericDAO {
     
     let baseURL = "https://api.uptimerobot.com/v2/getMonitors"
     let apiKey = "m779668826-963324b37c14e6091936e959"
     
     func getApiStatus( completion: @escaping ([ApiDTO]) -> Void) {
         
+        var monitorArray = [ApiDTO]()
         var headers: [String:String] = [:]
         headers["api_key"] = apiKey
         
@@ -23,33 +25,15 @@ class ApiDAO {
             
             (response) in
         
-            if let dic = response.value as? [String:AnyObject], let status = dic["stat"] as? String{
+            if let dic = response.value as? [String:AnyObject], let monitors = dic["monitors"] as? [[String:AnyObject]]{
                 
-                let _ = status
+                for monitor in monitors{
+                    if let aMonitor = ApiDTO(dictionary: monitor){
+                        monitorArray.append(aMonitor)
+                    }
+                }
+                completion(monitorArray)
             }
         }
     }
 }
-
-//func getMovies(page: String, genreID: NSNumber, completion: @escaping ([Movie]) -> Void){
-//
-
-//    Alamofire.request(moviesList, parameters: paramDic).responseJSON(completionHandler: {
-//
-//        myResponse in
-//
-//        var moviesList: [Movie] = []
-//
-//        if let dictionary = myResponse.value as? [String: AnyObject],
-//            let movies = dictionary[keyDictionary] as? [[String:AnyObject]]{
-//
-//            for movieDictionary in movies{
-//                if let movie = Movie(dictionary: movieDictionary){
-//                    moviesList.append(movie)
-//                }
-//            }
-//            completion(moviesList)
-//        }
-//    })
-//}
-//
