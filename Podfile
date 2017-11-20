@@ -6,6 +6,7 @@ target 'TTCheck' do
   use_frameworks!
   
   pod 'PureLayout'
+  pod 'Alamofire'
 
   # Pods for TTCheck
 

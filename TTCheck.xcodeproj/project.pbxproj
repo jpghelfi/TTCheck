@@ -10,6 +10,7 @@
 		55F3CBE1173717A6B13AC6DE /* Pods_TTCheckUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FC1EB5BF5B68C185B29A49E /* Pods_TTCheckUITests.framework */; };
 		953308BCF3871DE19C1FECC0 /* Pods_TTCheckTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17FD70F9D137289DB80196C /* Pods_TTCheckTests.framework */; };
 		A3010F658690F07B23444F5A /* Pods_TTCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05722EB2448A0C08F1F5AA45 /* Pods_TTCheck.framework */; };
+		E81CDE451FC354F400EF2590 /* ApiDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81CDE441FC354F400EF2590 /* ApiDAO.swift */; };
 		E822D92D1FC2078600E01E06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E822D92C1FC2078600E01E06 /* AppDelegate.swift */; };
 		E822D9321FC2078600E01E06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E822D9301FC2078600E01E06 /* Main.storyboard */; };
 		E822D9351FC2078600E01E06 /* TTCheck.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E822D9331FC2078600E01E06 /* TTCheck.xcdatamodeld */; };
@@ -51,6 +52,7 @@
 		CD7C8D5475E6E8FDC5E29A73 /* Pods-TTCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTCheck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTCheck/Pods-TTCheck.debug.xcconfig"; sourceTree = "<group>"; };
 		D38D6378EB761C38899030CB /* Pods-TTCheckTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTCheckTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTCheckTests/Pods-TTCheckTests.release.xcconfig"; sourceTree = "<group>"; };
 		E17FD70F9D137289DB80196C /* Pods_TTCheckTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTCheckTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E81CDE441FC354F400EF2590 /* ApiDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDAO.swift; sourceTree = "<group>"; };
 		E822D9291FC2078600E01E06 /* TTCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E822D92C1FC2078600E01E06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E822D9311FC2078600E01E06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 		E822D9621FC20B7300E01E06 /* dao */ = {
 			isa = PBXGroup;
 			children = (
+				E81CDE441FC354F400EF2590 /* ApiDAO.swift */,
 			);
 			path = dao;
 			sourceTree = "<group>";
@@ -382,10 +385,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TTCheck/Pods-TTCheck-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -534,6 +539,7 @@
 				E822D9681FC20BE500E01E06 /* ApiDTO.swift in Sources */,
 				E822D92D1FC2078600E01E06 /* AppDelegate.swift in Sources */,
 				E822D96A1FC20C4600E01E06 /* StatusDTO.swift in Sources */,
+				E81CDE451FC354F400EF2590 /* ApiDAO.swift in Sources */,
 				E822D9601FC20AE600E01E06 /* HomeTableViewCell.swift in Sources */,
 				E822D9351FC2078600E01E06 /* TTCheck.xcdatamodeld in Sources */,
 			);

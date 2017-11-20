@@ -25,6 +25,11 @@ class HomeTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let dao = ApiDAO()
+        dao.getApiStatus { (response) in
+            let _ = response
+        }
        
         setupRefreshControl()
 
@@ -44,8 +49,8 @@ class HomeTableViewController: UITableViewController {
             tableView.addSubview(refreshController)
         }
         self.refreshController.addTarget(self, action: #selector(refreshData(_:)), for: .valueChanged)
-        self.refreshController.tintColor = UIColor(red:0.25, green:0.72, blue:0.85, alpha:1.0)
-        self.refreshController.attributedTitle = NSAttributedString(string: "Fetching...")
+        self.refreshController.tintColor = .black
+        self.refreshController.attributedTitle = NSAttributedString(string: "loading...")
     }
     
     fileprivate func setupTableView() {
@@ -87,15 +92,12 @@ class HomeTableViewController: UITableViewController {
     }
     
     @objc private func refreshData(_ sender: Any) {
-        // Fetch Weather Data
         self.tableView.reloadData()
         self.refreshController.endRefreshing()
-//        self.activityIndicatorView.stopAnimating()
-        
     }
     
     @objc private func update(){
-        self.tableView.reloadData()
+        self.refreshData((refreshData(_:)))
     }
     
     // MARK: - Table view data source
