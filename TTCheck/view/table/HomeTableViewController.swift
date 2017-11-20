@@ -16,6 +16,7 @@ class HomeTableViewController: UITableViewController {
     var APICheckArray = [ApiDTO]()
     
     fileprivate func loadData() {
+        self.APICheckArray.removeAll()
         let service = ApiService()
         service.getApiStatus { (response) in
             self.APICheckArray.append(contentsOf: response)
