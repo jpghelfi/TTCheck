@@ -26,29 +26,46 @@ class HomeTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
+        setupRefreshControl()
+
+        setupTableView()
+        
+        setupNavigation()
+
+        loadData()
+        
+        self.tableView.reloadData()
+    }
+    
+    fileprivate func setupRefreshControl() {
         if #available(iOS 10.0, *) {
             tableView.refreshControl = refreshController
         } else {
             tableView.addSubview(refreshController)
         }
-        
         self.refreshController.addTarget(self, action: #selector(refreshData(_:)), for: .valueChanged)
-
-        
+        self.refreshController.tintColor = UIColor(red:0.25, green:0.72, blue:0.85, alpha:1.0)
+        self.refreshController.attributedTitle = NSAttributedString(string: "Fetching...")
+    }
+    
+    fileprivate func setupTableView() {
         self.tableView.register(HomeTableViewCell.self, forCellReuseIdentifier: "homeCell")
         self.tableView.contentInset = .init(top: 64, left: 0, bottom: 0, right: 0)
+    }
+    
+    fileprivate func setupNavigation() {
         self.title = "ttcheck"
         self.navigationController?.navigationBar.titleTextAttributes = [ NSAttributedStringKey.font: UIFont.systemFont(ofSize: 24), NSAttributedStringKey.foregroundColor: UIColor.white]
-        
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Update", style: .plain, target: self, action: #selector(update))
-
         
         if #available(iOS 11.0, *) {
             self.tableView.contentInsetAdjustmentBehavior = .never
         } else {
             self.automaticallyAdjustsScrollViewInsets = false
         }
-
+    }
+    
+    fileprivate func loadData() {
         api1.apiName = "TTSocial"
         api1.lastTimeCheck = "22-04-2017"
         api1.apiStatus = status1
@@ -67,8 +84,6 @@ class HomeTableViewController: UITableViewController {
         APICheckArray.append(api1)
         APICheckArray.append(api2)
         APICheckArray.append(api2)
-        
-        self.tableView.reloadData()
     }
     
     @objc private func refreshData(_ sender: Any) {
