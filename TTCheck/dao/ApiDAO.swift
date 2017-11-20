@@ -13,7 +13,7 @@ import TTMVC
 class ApiDAO: TTGenericDAO {
     
     let baseURL = "https://api.uptimerobot.com/v2/getMonitors"
-    let apiKey = "m779668826-963324b37c14e6091936e959"
+    let apiKey = "u517083-c94c552b912c91bd57e6c152"
     
     func getApiStatus( completion: @escaping ([ApiDTO]) -> Void) {
         

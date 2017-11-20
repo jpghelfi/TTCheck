@@ -15,29 +15,24 @@ class HomeTableViewController: UITableViewController {
     
     var APICheckArray = [ApiDTO]()
     
-    var api1 = ApiDTO()
-    
-    var api2 = ApiDTO()
-    
-    var status1 = StatusDTO(status: true)
-    
-    var status2 = StatusDTO(status: false)
+    fileprivate func loadData() {
+        let service = ApiService()
+        service.getApiStatus { (response) in
+            self.APICheckArray.append(contentsOf: response)
+            self.tableView.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let dao = ApiDAO()
-        dao.getApiStatus { (response) in
-            let _ = response
-        }
-       
+        loadData()
+        
         setupRefreshControl()
 
         setupTableView()
         
         setupNavigation()
-
-        loadData()
         
         self.tableView.reloadData()
     }
@@ -70,29 +65,8 @@ class HomeTableViewController: UITableViewController {
         }
     }
     
-    fileprivate func loadData() {
-        api1.apiName = "TTSocial"
-        api1.lastTimeCheck = "22-04-2017"
-        api1.apiStatus = status1
-        api2.apiName = "Instagram"
-        api2.lastTimeCheck = "12-11-2017"
-        api2.apiStatus = status2
-        
-        APICheckArray.append(api1)
-        APICheckArray.append(api1)
-        APICheckArray.append(api2)
-        APICheckArray.append(api2)
-        APICheckArray.append(api1)
-        APICheckArray.append(api2)
-        APICheckArray.append(api2)
-        APICheckArray.append(api2)
-        APICheckArray.append(api1)
-        APICheckArray.append(api2)
-        APICheckArray.append(api2)
-    }
-    
     @objc private func refreshData(_ sender: Any) {
-        self.tableView.reloadData()
+        self.loadData()
         self.refreshController.endRefreshing()
     }
     
