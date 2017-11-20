@@ -26,11 +26,13 @@ class StatusDTO {
             
             if live{
                 self.statusText = "OK"
-                self.color = UIColor(hexString: "#d1ffdd")
+//                self.color = UIColor(hexString: "#d1ffdd")
+                self.color = .green
             }else{
                 
                 self.statusText = "ERROR"
-                self.color = UIColor(hexString: "ff85a2")
+//                self.color = UIColor(hexString: "ff85a2")
+                self.color = .red
             }
         }
     }

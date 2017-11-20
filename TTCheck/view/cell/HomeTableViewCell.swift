@@ -11,52 +11,61 @@ import PureLayout
 
 class HomeTableViewCell: UITableViewCell {
 
-    var apiNameLabel: UILabel?
-    var statusLabel: UILabel?
-    var lastTimeCheckedLabel: UILabel?
+    var apiNameLabel: UILabel!
+    var statusContainer: UIView!
+    var statusLabel: UILabel!
+    var lastTimeCheckedLabel: UILabel!
     
     func setupCell( api: ApiDTO){
         
         self.apiNameLabel = UILabel()
-        self.apiNameLabel?.text = api.apiName
-        self.apiNameLabel?.textColor = .black
-        if let name = apiNameLabel{
-            self.addSubview(name)
-            
-        }
+        self.apiNameLabel.text = api.apiName
+        self.apiNameLabel.textColor = .black
+        self.addSubview(self.apiNameLabel)
+        
+        self.statusContainer = UIView()
+        self.addSubview(self.statusContainer)
+        
         
         self.statusLabel = UILabel()
-        self.statusLabel?.text = api.apiStatus?.statusText
-        self.statusLabel?.textColor = .black
-        self.statusLabel?.backgroundColor = api.getBackgorundColor()
-        if let status = self.statusLabel{
-            self.addSubview(status)
-            
-        }
+        self.statusLabel.text = api.apiStatus?.statusText
+        self.statusLabel.textColor = api.getBackgorundColor()
+        self.statusLabel.font = UIFont.systemFont(ofSize: 30)
+        self.statusContainer.addSubview(self.statusLabel)
         
         self.lastTimeCheckedLabel = UILabel()
-        self.lastTimeCheckedLabel?.text = api.lastTimeCheck
-        self.lastTimeCheckedLabel?.textColor = .black
-        if let last = self.lastTimeCheckedLabel{
-            self.addSubview(last)
-            
-        }
-//        self.backgroundColor = api.getBackgorundColor()
+        self.lastTimeCheckedLabel.text = api.lastTimeCheck
+        self.lastTimeCheckedLabel.font = UIFont.systemFont(ofSize: 10)
+        self.lastTimeCheckedLabel.textColor = .black
+        self.addSubview(self.lastTimeCheckedLabel)
         
+        self.isUserInteractionEnabled = false
         self.setupConstraints()
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        self.apiNameLabel.text = nil
+        self.statusLabel.text = nil
+        self.lastTimeCheckedLabel.text = nil
+    }
+    
     private func setupConstraints() -> Void {
-        self.apiNameLabel?.autoPinEdge(.left, to: .left, of: self, withOffset: 10)
-        self.apiNameLabel?.autoPinEdge(.top, to: .top, of: self, withOffset: 10)
+        self.apiNameLabel.autoPinEdge(.left, to: .left, of: self, withOffset: 10)
+        self.apiNameLabel.autoAlignAxis(.horizontal, toSameAxisOf: self)
         
-        self.statusLabel?.autoPinEdge(.right, to: .right, of: self, withOffset: -10)
-        self.statusLabel?.autoPinEdge(.top, to: .top, of: self, withOffset: 10)
+        self.statusContainer.autoPinEdge(.top, to: .top, of: self)
+        self.statusContainer.autoPinEdge(.bottom, to: .bottom, of: self)
+        self.statusContainer.autoPinEdge(.left, to: .right, of: self.apiNameLabel, withOffset: 180)
+        self.statusContainer.autoPinEdge(.right, to: .right, of: self, withOffset: -10)
         
-        self.lastTimeCheckedLabel?.autoPinEdge(.left, to: .left, of: self, withOffset: 10)
+        self.statusLabel.autoAlignAxis(.horizontal, toSameAxisOf: self.statusContainer)
+        self.statusLabel.autoPinEdge(.right, to: .right, of: self.statusContainer)
         
-        if let status = self.statusLabel{
-            self.lastTimeCheckedLabel?.autoPinEdge(.top, to: .bottom, of: status, withOffset: 10)
-        }
+        self.lastTimeCheckedLabel.autoPinEdge(.left, to: .left, of: self, withOffset: 10)
+
+        self.lastTimeCheckedLabel.autoPinEdge(.bottom, to: .bottom, of: self, withOffset: -10)
+
     }
 }
