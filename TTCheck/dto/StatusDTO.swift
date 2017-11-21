@@ -30,10 +30,10 @@ class StatusDTO: TTGenericDTO {
     
     private func setStatusValue(number: NSNumber) -> Bool{
         
-        if number == 1{
-            return false
-        }else{
+        if number == 2{
             return true
+        }else{
+            return false
         }
     }
     
