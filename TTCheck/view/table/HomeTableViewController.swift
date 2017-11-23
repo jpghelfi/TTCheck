@@ -16,9 +16,9 @@ class HomeTableViewController: UITableViewController {
     var APICheckArray = [ApiDTO]()
     
     fileprivate func loadData() {
-        self.APICheckArray.removeAll()
         let service = ApiService()
         service.getApiStatus { (response) in
+            self.APICheckArray.removeAll()
             self.APICheckArray.append(contentsOf: response)
             self.tableView.reloadData()
         }
@@ -35,7 +35,7 @@ class HomeTableViewController: UITableViewController {
         
         setupNavigation()
         
-//        self.tableView.reloadData()
+//        self.tableView.reloadData().
     }
     
     fileprivate func setupRefreshControl() {
@@ -44,7 +44,7 @@ class HomeTableViewController: UITableViewController {
         } else {
             tableView.addSubview(refreshController)
         }
-        self.refreshController.addTarget(self, action: #selector(refreshData(_:)), for: .valueChanged)
+        self.refreshController.addTarget(self, action: #selector(update), for: .valueChanged)
         self.refreshController.tintColor = .black
         self.refreshController.attributedTitle = NSAttributedString(string: "loading...")
     }
@@ -67,12 +67,12 @@ class HomeTableViewController: UITableViewController {
     }
     
     @objc private func refreshData(_ sender: Any) {
-        self.loadData()
-        self.refreshController.endRefreshing()
+
     }
     
     @objc private func update(){
-        self.refreshData((refreshData(_:)))
+        self.loadData()
+        self.refreshController.endRefreshing()
     }
     
     // MARK: - Table view data source
