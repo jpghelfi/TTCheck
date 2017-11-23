@@ -35,7 +35,7 @@ class HomeTableViewController: UITableViewController {
         
         setupNavigation()
         
-        self.tableView.reloadData()
+//        self.tableView.reloadData()
     }
     
     fileprivate func setupRefreshControl() {
