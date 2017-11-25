@@ -27,6 +27,10 @@ class HomeTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = .gray
+        
+        self.tableView.separatorStyle = .none
+        
         loadData()
         
         setupRefreshControl()
@@ -35,7 +39,6 @@ class HomeTableViewController: UITableViewController {
         
         setupNavigation()
         
-//        self.tableView.reloadData().
     }
     
     fileprivate func setupRefreshControl() {
@@ -66,10 +69,6 @@ class HomeTableViewController: UITableViewController {
         }
     }
     
-    @objc private func refreshData(_ sender: Any) {
-
-    }
-    
     @objc private func update(){
         self.loadData()
         self.refreshController.endRefreshing()
@@ -96,6 +95,6 @@ class HomeTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 70
+        return 140
     }
 }
