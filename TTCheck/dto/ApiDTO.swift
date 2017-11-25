@@ -6,22 +6,6 @@
 //  Copyright © 2017 Juan Pablo. All rights reserved.
 //
 
-//{
-//    "id": 779668826,
-//    "friendly_name": "facebook",
-//    "url": "https://www.facebook.com/platform/api-status/",
-//    "type": 1,
-//    "sub_type": "",
-//    "keyword_type": "",
-//    "keyword_value": "",
-//    "http_username": "",
-//    "http_password": "",
-//    "port": "",
-//    "interval": 300,
-//    "status": 2,
-//    "create_datetime": 1511201631
-//},
-
 import Foundation
 import UIKit
 import TTMVC

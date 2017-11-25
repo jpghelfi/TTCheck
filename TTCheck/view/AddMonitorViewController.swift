@@ -46,6 +46,8 @@ class AddMonitorViewController: UIViewController {
     
     var delegate: DidSaveMonitor?
     
+    var newMonitorDTO: NewMonitorDTO?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,7 +76,7 @@ class AddMonitorViewController: UIViewController {
         self.nameContainerView.addSubview(self.monitorNameLabel)
         
         self.monitorNameTextField = UITextField()
-        self.monitorNameTextField.textColor = .white
+        self.monitorNameTextField.textColor = .black
         self.monitorNameTextField.backgroundColor = .white
         self.monitorNameTextField.font = UIFont.systemFont(ofSize: 20)
         self.monitorNameTextField.layer.cornerRadius = 5
@@ -92,7 +94,7 @@ class AddMonitorViewController: UIViewController {
         self.urlContainerView.addSubview(self.monitorURLLabel)
         
         self.monitorURLTextField = UITextField()
-        self.monitorURLTextField.textColor = .white
+        self.monitorURLTextField.textColor = .black
         self.monitorURLTextField.backgroundColor = .white
         self.monitorURLTextField.font = UIFont.systemFont(ofSize: 20)
         self.monitorURLTextField.layer.cornerRadius = 10
@@ -119,6 +121,12 @@ class AddMonitorViewController: UIViewController {
     
     @objc private func didTouchButton(sender: UIButton){
         
+        let newMonitorService = NewMonitorService()
+        newMonitorService.createNewMonitorWith(name: self.monitorNameTextField.text!, url: self.monitorURLTextField.text!) { () in
+            
+//            self.newMonitorDTO = response
+            
+        }
     }
     
     private func fillViews(){
