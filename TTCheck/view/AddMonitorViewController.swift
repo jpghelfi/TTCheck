@@ -122,7 +122,7 @@ class AddMonitorViewController: UIViewController {
     @objc private func didTouchButton(sender: UIButton){
         
         let newMonitorService = NewMonitorService()
-        newMonitorService.createNewMonitorWith(name: self.monitorNameTextField.text!, url: self.monitorURLTextField.text!) { () in
+        newMonitorService.createNewMonitorWith(name: self.monitorNameTextField.text!, url: self.monitorURLTextField.text!) { (NewMonitorStatusDTO) in
             
 //            self.newMonitorDTO = response
             
