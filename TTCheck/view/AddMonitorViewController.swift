@@ -124,10 +124,31 @@ class AddMonitorViewController: UIViewController {
         let newMonitorService = NewMonitorService()
         newMonitorService.createNewMonitorWith(name: self.monitorNameTextField.text!, url: self.monitorURLTextField.text!) { (NewMonitorStatusDTO) in
             
-//            self.newMonitorDTO = response
+            self.checkStatus(newMonitorStatus: NewMonitorStatusDTO)
             
         }
     }
+    
+    private func checkStatus(newMonitorStatus: NewMonitorStatusDTO){
+        
+        if newMonitorStatus.isMonitorSaved(){
+            self.dismiss(animated: true, completion: {
+                
+            })
+        }else{
+            let myAlert = UIAlertController(title: NSLocalizedString("Sorry", comment: ""), message: NSLocalizedString("Sorry again", comment: ""), preferredStyle: .actionSheet)
+            
+            myAlert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
+                NSLog("The \"OK\" alert occured.")
+            }))
+            
+            present(myAlert, animated: true, completion: {
+                
+            })
+        }
+        
+    }
+    
     
     private func fillViews(){
         

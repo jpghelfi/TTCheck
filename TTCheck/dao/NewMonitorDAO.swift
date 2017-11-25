@@ -15,7 +15,7 @@ class NewMonitorDAO: TTGenericDAO {
     let baseURL = "https://api.uptimerobot.com/v2/newMonitor"
     let apiKey = "u517083-c94c552b912c91bd57e6c152"
     
-    func createNewMonitorWith(name: String, url: String, type: String = "1", completion: (NewMonitorStatusDTO) -> ()){
+    func createNewMonitorWith(name: String, url: String, type: String = "1", completion: @escaping (NewMonitorStatusDTO) -> ()){
     
         var params: [String:String] = [:]
         params["api_key"] = apiKey
@@ -29,7 +29,7 @@ class NewMonitorDAO: TTGenericDAO {
             
             if let dic = myResponse.value as? [String:AnyObject], let status = dic["stat"] as? String{
                 
-                var newStatus = NewMonitorStatusDTO(status: status)
+                let newStatus = NewMonitorStatusDTO(status: status)
                 completion(newStatus)
             }
             

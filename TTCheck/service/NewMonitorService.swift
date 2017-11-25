@@ -11,10 +11,10 @@ import TTMVC
 
 class NewMonitorService: TTGenericService {
     
-    func createNewMonitorWith(name: String, url: String, type: NSNumber = 1, completion: (NewMonitorStatusDTO) -> ()){
+    func createNewMonitorWith(name: String, url: String, type: NSNumber = 1, completion: @escaping (NewMonitorStatusDTO) -> ()){
     
         let newMonitorDAO = NewMonitorDAO()
-        newMonitorDAO.createNewMonitorWith(name: name, url: url) { () in
+        newMonitorDAO.createNewMonitorWith(name: name, url: url) { (response) in
             
             completion(response)
         }
