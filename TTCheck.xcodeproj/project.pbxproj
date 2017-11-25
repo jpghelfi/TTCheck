@@ -26,6 +26,7 @@
 		E86AA8561FC9CB4B00718243 /* AddMonitorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA8551FC9CB4B00718243 /* AddMonitorTableViewCell.swift */; };
 		E86AA8591FC9DE5400718243 /* NewMonitorDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA8581FC9DE5400718243 /* NewMonitorDTO.swift */; };
 		E86AA85B1FC9E17D00718243 /* AddMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA85A1FC9E17D00718243 /* AddMonitorViewController.swift */; };
+		E86AA85D1FC9F8EA00718243 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA85C1FC9F8EA00718243 /* File.swift */; };
 		E8DE33971FC2346A004F0A13 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DE33961FC2346A004F0A13 /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,7 @@
 		E86AA8551FC9CB4B00718243 /* AddMonitorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMonitorTableViewCell.swift; sourceTree = "<group>"; };
 		E86AA8581FC9DE5400718243 /* NewMonitorDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMonitorDTO.swift; sourceTree = "<group>"; };
 		E86AA85A1FC9E17D00718243 /* AddMonitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMonitorViewController.swift; sourceTree = "<group>"; };
+		E86AA85C1FC9F8EA00718243 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		E8DE33961FC2346A004F0A13 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -204,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				E81CDE441FC354F400EF2590 /* ApiDAO.swift */,
+				E86AA85C1FC9F8EA00718243 /* File.swift */,
 			);
 			path = dao;
 			sourceTree = "<group>";
@@ -558,6 +561,7 @@
 				E822D96A1FC20C4600E01E06 /* StatusDTO.swift in Sources */,
 				E816AFBC1FC37ACF00F23B93 /* ApiService.swift in Sources */,
 				E81CDE451FC354F400EF2590 /* ApiDAO.swift in Sources */,
+				E86AA85D1FC9F8EA00718243 /* File.swift in Sources */,
 				E822D9601FC20AE600E01E06 /* HomeTableViewCell.swift in Sources */,
 				E822D9351FC2078600E01E06 /* TTCheck.xcdatamodeld in Sources */,
 			);

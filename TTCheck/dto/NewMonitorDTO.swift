@@ -24,6 +24,9 @@ import TTMVC
 
 class NewMonitorDTO: TTGenericDTO {
     
+    var friendly_name: String?
+    var url: String?
+    var type: NSNumber?
     
     
     
