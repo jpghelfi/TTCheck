@@ -26,10 +26,10 @@ class HomeTableViewCell: UITableViewCell {
     
     func setupCell( api: ApiDTO){
         
-        self.backgroundColor = .gray
+        self.backgroundColor = UIColor.getLightGrayColor()
         
         self.containerView = UIView()
-        self.containerView.backgroundColor = UIColor(red: 0.7843, green: 0.2431, blue: 0.4157, alpha: 1)
+        self.containerView.backgroundColor = UIColor.getRedColor()
         self.containerView.layer.cornerRadius = 10
         self.addSubview(self.containerView)
         

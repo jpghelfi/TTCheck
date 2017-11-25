@@ -23,6 +23,9 @@
 		E822D9601FC20AE600E01E06 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E822D95F1FC20AE600E01E06 /* HomeTableViewCell.swift */; };
 		E822D9681FC20BE500E01E06 /* ApiDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E822D9671FC20BE500E01E06 /* ApiDTO.swift */; };
 		E822D96A1FC20C4600E01E06 /* StatusDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E822D9691FC20C4600E01E06 /* StatusDTO.swift */; };
+		E86AA8561FC9CB4B00718243 /* AddMonitorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA8551FC9CB4B00718243 /* AddMonitorTableViewCell.swift */; };
+		E86AA8591FC9DE5400718243 /* NewMonitorDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA8581FC9DE5400718243 /* NewMonitorDTO.swift */; };
+		E86AA85B1FC9E17D00718243 /* AddMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA85A1FC9E17D00718243 /* AddMonitorViewController.swift */; };
 		E8DE33971FC2346A004F0A13 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DE33961FC2346A004F0A13 /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +75,9 @@
 		E822D95F1FC20AE600E01E06 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		E822D9671FC20BE500E01E06 /* ApiDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDTO.swift; sourceTree = "<group>"; };
 		E822D9691FC20C4600E01E06 /* StatusDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusDTO.swift; sourceTree = "<group>"; };
+		E86AA8551FC9CB4B00718243 /* AddMonitorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMonitorTableViewCell.swift; sourceTree = "<group>"; };
+		E86AA8581FC9DE5400718243 /* NewMonitorDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMonitorDTO.swift; sourceTree = "<group>"; };
+		E86AA85A1FC9E17D00718243 /* AddMonitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMonitorViewController.swift; sourceTree = "<group>"; };
 		E8DE33961FC2346A004F0A13 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -189,6 +195,7 @@
 			children = (
 				E822D9671FC20BE500E01E06 /* ApiDTO.swift */,
 				E822D9691FC20C4600E01E06 /* StatusDTO.swift */,
+				E86AA8581FC9DE5400718243 /* NewMonitorDTO.swift */,
 			);
 			path = dto;
 			sourceTree = "<group>";
@@ -214,6 +221,7 @@
 			children = (
 				E822D9651FC20BAC00E01E06 /* table */,
 				E822D9661FC20BB200E01E06 /* cell */,
+				E86AA85A1FC9E17D00718243 /* AddMonitorViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -230,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				E822D95F1FC20AE600E01E06 /* HomeTableViewCell.swift */,
+				E86AA8551FC9CB4B00718243 /* AddMonitorTableViewCell.swift */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -539,9 +548,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E86AA8561FC9CB4B00718243 /* AddMonitorTableViewCell.swift in Sources */,
+				E86AA8591FC9DE5400718243 /* NewMonitorDTO.swift in Sources */,
 				E822D95E1FC20A8900E01E06 /* HomeTableViewController.swift in Sources */,
 				E8DE33971FC2346A004F0A13 /* UIColorExtension.swift in Sources */,
 				E822D9681FC20BE500E01E06 /* ApiDTO.swift in Sources */,
+				E86AA85B1FC9E17D00718243 /* AddMonitorViewController.swift in Sources */,
 				E822D92D1FC2078600E01E06 /* AppDelegate.swift in Sources */,
 				E822D96A1FC20C4600E01E06 /* StatusDTO.swift in Sources */,
 				E816AFBC1FC37ACF00F23B93 /* ApiService.swift in Sources */,

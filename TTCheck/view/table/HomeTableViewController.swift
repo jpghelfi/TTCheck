@@ -27,23 +27,15 @@ class HomeTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.view.backgroundColor = UIColor.clear
+        self.view.backgroundColor = UIColor.getLightGrayColor()
         
-        self.view.backgroundColor = .gray
+        self.loadData()
         
-        self.tableView.separatorStyle = .none
-        
-        loadData()
-        
-        setupRefreshControl()
+        self.setupRefreshControl()
 
-        setupTableView()
+        self.setupTableView()
         
-        setupNavigation()
-        
+        self.setupNavigation()
     }
     
     fileprivate func setupRefreshControl() {
@@ -58,20 +50,32 @@ class HomeTableViewController: UITableViewController {
     }
     
     fileprivate func setupTableView() {
+       
         self.tableView.register(HomeTableViewCell.self, forCellReuseIdentifier: "homeCell")
-        self.tableView.contentInset = .init(top: 64, left: 0, bottom: 0, right: 0)
+        self.tableView.register(AddMonitorTableViewCell.self, forCellReuseIdentifier: "addMonitorCell")
+        
+        self.tableView.contentInset = .init(top: 88, left: 0, bottom: 0, right: 0)
+        self.tableView.separatorStyle = .none
     }
     
     fileprivate func setupNavigation() {
         self.title = "ttcheck"
         self.navigationController?.navigationBar.titleTextAttributes = [ NSAttributedStringKey.font: UIFont.systemFont(ofSize: 24), NSAttributedStringKey.foregroundColor: UIColor.white]
-//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Update", style: .plain, target: self, action: #selector(update))
+
+        //        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Update", style: .plain, target: self, action: #selector(update))
+        
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = UIColor.clear
+        
         
         if #available(iOS 11.0, *) {
             self.tableView.contentInsetAdjustmentBehavior = .never
         } else {
             self.automaticallyAdjustsScrollViewInsets = false
         }
+        self.navigationController?.navigationBar.frame = CGRect(x: 0, y: 0, width: 320, height: 200)
     }
     
     @objc private func update(){
@@ -85,21 +89,55 @@ class HomeTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return APICheckArray.count
+        return APICheckArray.count + 1
+    }
+    
+    fileprivate func getCellForRow(_ tableView: UITableView, _ indexPath: IndexPath) -> UITableViewCell {
+        
+        if indexPath.row != APICheckArray.endIndex{
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "homeCell", for: indexPath)
+            let api = APICheckArray[indexPath.row]
+            if let homeCell = cell as? HomeTableViewCell {
+                
+                homeCell.setupCell(api: api)
+            }
+            return cell
+        }else if indexPath.row == APICheckArray.endIndex{
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "addMonitorCell", for: indexPath)
+            if let addMonitorCell = cell as? AddMonitorTableViewCell {
+                
+                addMonitorCell.setupCell()
+            }
+            return cell
+        }
+        return UITableViewCell()
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if indexPath.row == APICheckArray.endIndex{
+        
+            present(AddMonitorViewController(), animated: true, completion: {
+                
+            })
+        
+        }
+        
+        
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "homeCell", for: indexPath)
-        let api = APICheckArray[indexPath.row]
-           if let homeCell = cell as? HomeTableViewCell {
-        
-                homeCell.setupCell(api: api)
-            }
-        return cell
+        return getCellForRow(tableView, indexPath)
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 140
     }
+    
 }
+
+
+

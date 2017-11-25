@@ -10,6 +10,20 @@ import Foundation
 import UIKit
 
 extension UIColor {
+
+    class func getLightGrayColor() -> UIColor {
+        return UIColor(red: 0.3059, green: 0.3059, blue: 0.3059, alpha: 1)
+    }
+    
+    class func getDarkGrayColor() -> UIColor {
+        return UIColor(red: 0.1804, green: 0.1804, blue: 0.1804, alpha: 1)
+    }
+    
+    class func getRedColor() -> UIColor {
+        return UIColor(red: 0.7843, green: 0.2431, blue: 0.4157, alpha: 1)
+    }
+    
+    
     convenience init(hexString: String) {
         let hex = hexString.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
         var int = UInt32()
