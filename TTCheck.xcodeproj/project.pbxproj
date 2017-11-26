@@ -29,6 +29,7 @@
 		E86AA85D1FC9F8EA00718243 /* MonitorDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA85C1FC9F8EA00718243 /* MonitorDAO.swift */; };
 		E86AA85F1FC9FEAB00718243 /* MonitorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA85E1FC9FEAB00718243 /* MonitorService.swift */; };
 		E86AA8611FCA05FB00718243 /* MonitorStatusDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA8601FCA05FB00718243 /* MonitorStatusDTO.swift */; };
+		E86AA8651FCB0C8D00718243 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA8641FCB0C8D00718243 /* SplashViewController.swift */; };
 		E8DE33971FC2346A004F0A13 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DE33961FC2346A004F0A13 /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,7 @@
 		E86AA85C1FC9F8EA00718243 /* MonitorDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorDAO.swift; sourceTree = "<group>"; };
 		E86AA85E1FC9FEAB00718243 /* MonitorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorService.swift; sourceTree = "<group>"; };
 		E86AA8601FCA05FB00718243 /* MonitorStatusDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorStatusDTO.swift; sourceTree = "<group>"; };
+		E86AA8641FCB0C8D00718243 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		E8DE33961FC2346A004F0A13 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -231,6 +233,7 @@
 				E822D9651FC20BAC00E01E06 /* table */,
 				E822D9661FC20BB200E01E06 /* cell */,
 				E86AA85A1FC9E17D00718243 /* AddMonitorViewController.swift */,
+				E86AA8641FCB0C8D00718243 /* SplashViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 				"${BUILT_PRODUCTS_DIR}/TTMVC/TTMVC.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -417,6 +421,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTMVC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -574,6 +579,7 @@
 				E86AA85D1FC9F8EA00718243 /* MonitorDAO.swift in Sources */,
 				E822D9601FC20AE600E01E06 /* HomeTableViewCell.swift in Sources */,
 				E822D9351FC2078600E01E06 /* TTCheck.xcdatamodeld in Sources */,
+				E86AA8651FCB0C8D00718243 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

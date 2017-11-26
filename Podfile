@@ -10,6 +10,7 @@ target 'TTCheck' do
   pod 'Alamofire'
   pod 'TTMVC'
   pod 'SwipeCellKit'
+  pod 'lottie-ios'
   
   # Pods for TTCheck
 
