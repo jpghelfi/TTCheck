@@ -20,7 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let splashViewContoller = SplashViewController()
         self.window?.rootViewController = splashViewContoller
 
-        UIApplication.shared.isStatusBarHidden = true
+//        UIApplication.shared.isStatusBarHidden = true
+        UIApplication.shared.statusBarStyle = .lightContent
+
     
         return true
     }

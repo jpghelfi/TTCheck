@@ -62,6 +62,8 @@ class HomeTableViewController: UITableViewController {
     fileprivate func setupNavigation() {
         self.title = "ttcheck"
         self.navigationController?.navigationBar.titleTextAttributes = [ NSAttributedStringKey.font: UIFont.systemFont(ofSize: 24), NSAttributedStringKey.foregroundColor: UIColor.white]
+        
+        UIApplication.shared.isStatusBarHidden = false
 
         //        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Update", style: .plain, target: self, action: #selector(update))
         
