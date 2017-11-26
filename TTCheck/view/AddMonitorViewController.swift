@@ -98,6 +98,13 @@ class AddMonitorViewController: UIViewController {
         self.urlContainerView.addSubview(self.monitorURLLabel)
         
         self.monitorURLTextField = UITextField()
+//        let label = UILabel()
+//        label.textColor = .black
+//        label.font = UIFont.boldSystemFont(ofSize: 20)
+//        label.text = "http://"
+//        self.monitorURLTextField.rightViewMode = .always
+//        self.monitorURLTextField.rightView = label
+        self.monitorURLTextField.text = "http://"
         self.monitorURLTextField.textColor = .black
         self.monitorURLTextField.backgroundColor = .white
         self.monitorURLTextField.font = UIFont.systemFont(ofSize: 20)

@@ -61,5 +61,53 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTCheck/view/table/HomeTableViewController.swift"
+            timestampString = "533353562.514645"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "tableView(_:editActionsForRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TTCheck.HomeTableViewController.tableView(__ObjC.UITableView, editActionsForRowAt: Foundation.IndexPath) -&gt; Swift.Optional&lt;Swift.Array&lt;__ObjC.UITableViewRowAction&gt;&gt;"
+                  moduleName = "TTCheck"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jp/git/TTCheck/TTCheck/view/table/HomeTableViewController.swift"
+                  timestampString = "533351851.837528"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "34">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__ObjC.UITableViewRowAction, Foundation.IndexPath) -&gt; () in TTCheck.HomeTableViewController.tableView(__ObjC.UITableView, editActionsForRowAt: Foundation.IndexPath) -&gt; Swift.Optional&lt;Swift.Array&lt;__ObjC.UITableViewRowAction&gt;&gt;"
+                  moduleName = "TTCheck"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jp/git/TTCheck/TTCheck/view/table/HomeTableViewController.swift"
+                  timestampString = "533351851.848064"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "117"
+                  endingLineNumber = "117"
+                  offsetFromSymbolStart = "25">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

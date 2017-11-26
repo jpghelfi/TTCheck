@@ -94,20 +94,26 @@ class HomeTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle:UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
+    }
+    
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         
-        if editingStyle == .delete{
-            
+        let action = UITableViewRowAction(style: .normal, title: "Delete") { (action, indexPath) in
             let deleteService = MonitorService()
-            if let id = APICheckArray[indexPath.row].id{
+            if let id = self.APICheckArray[indexPath.row].id{
                 let theId = String(describing: id)
                 deleteService.deleteMonitorWith(id: theId, completion: { (response) in
-                    
+
                     self.APICheckArray.remove(at: indexPath.row)
                     self.tableView.deleteRows(at: [indexPath], with: .fade)
                 })
             }
         }
+        action.backgroundColor = UIColor.red
+        
+        return [action]
     }
+    
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
