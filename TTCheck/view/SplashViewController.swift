@@ -7,13 +7,15 @@
 //
 
 import UIKit
+import Lottie
 
 class SplashViewController: UIViewController {
 
     var label: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    var lottie: LOTAnimationView!
+    
+    fileprivate func setupViews() {
         
         self.view.backgroundColor = UIColor.getRedColor()
         
@@ -23,11 +25,28 @@ class SplashViewController: UIViewController {
         self.label.font = UIFont.systemFont(ofSize: 40)
         self.view.addSubview(self.label)
         
+        self.lottie = LOTAnimationView(name: "done")
+        self.view.addSubview(lottie)
+
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
-        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.splashTimeOut(sender:)), userInfo: nil, repeats: false)
-        // Do any additional setup after loading the view.
+        self.setupViews()
+    
+        self.setupConstraints()
         
-        setupConstraints()
+        self.showLottie()
+    }
+    
+    private func showLottie(){
+
+        self.lottie.play{ (finished) in
+            
+            Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.splashTimeOut(sender:)), userInfo: nil, repeats: false)
+        }
+        
     }
     
     @objc func splashTimeOut(sender : Timer){
@@ -38,7 +57,15 @@ class SplashViewController: UIViewController {
     }
     
     private func setupConstraints() {
+        
         self.label.autoCenterInSuperview()
+        
+        self.lottie.autoPinEdge(.top, to: .bottom, of: self.label)
+        self.lottie.autoAlignAxis(.vertical, toSameAxisOf: self.view)
+        self.lottie.autoSetDimension(.height, toSize: 100)
+        self.lottie.autoSetDimension(.width, toSize: 100)
+        self.lottie.contentMode = .scaleAspectFill
+
     }
 
     /*

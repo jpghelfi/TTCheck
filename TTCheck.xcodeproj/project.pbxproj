@@ -30,6 +30,8 @@
 		E86AA8611FCA05FB00718243 /* MonitorStatusDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA8601FCA05FB00718243 /* MonitorStatusDTO.swift */; };
 		E86AA8651FCB0C8D00718243 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA8641FCB0C8D00718243 /* SplashViewController.swift */; };
 		E86AB96F1FCB4EA10085F692 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E86AB96E1FCB4EA10085F692 /* Launch Screen.storyboard */; };
+		E86AB9731FCB5F040085F692 /* done.json in Resources */ = {isa = PBXBuildFile; fileRef = E86AB9721FCB5C300085F692 /* done.json */; };
+		E86AB9771FCB5F9B0085F692 /* lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = E86AB9761FCB5F970085F692 /* lottie.json */; };
 		E8DE33971FC2346A004F0A13 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DE33961FC2346A004F0A13 /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +88,8 @@
 		E86AA8601FCA05FB00718243 /* MonitorStatusDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorStatusDTO.swift; sourceTree = "<group>"; };
 		E86AA8641FCB0C8D00718243 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		E86AB96E1FCB4EA10085F692 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		E86AB9721FCB5C300085F692 /* done.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = done.json; sourceTree = "<group>"; };
+		E86AB9761FCB5F970085F692 /* lottie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = lottie.json; sourceTree = "<group>"; };
 		E8DE33961FC2346A004F0A13 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -234,6 +238,7 @@
 				E822D9661FC20BB200E01E06 /* cell */,
 				E86AA85A1FC9E17D00718243 /* AddMonitorViewController.swift */,
 				E86AA8641FCB0C8D00718243 /* SplashViewController.swift */,
+				E86AB9761FCB5F970085F692 /* lottie.json */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -259,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				E8DE33961FC2346A004F0A13 /* UIColorExtension.swift */,
+				E86AB9721FCB5C300085F692 /* done.json */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -379,9 +385,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E86AB9771FCB5F9B0085F692 /* lottie.json in Resources */,
 				E86AB96F1FCB4EA10085F692 /* Launch Screen.storyboard in Resources */,
 				E822D9371FC2078600E01E06 /* Assets.xcassets in Resources */,
 				E822D9321FC2078600E01E06 /* Main.storyboard in Resources */,
+				E86AB9731FCB5F040085F692 /* done.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

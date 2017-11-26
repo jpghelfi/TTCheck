@@ -68,7 +68,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTCheck/view/table/HomeTableViewController.swift"
-            timestampString = "533420674.924967"
+            timestampString = "533422257.237862"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "104"
@@ -84,7 +84,7 @@
                   moduleName = "TTCheck"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jp/git/TTCheck/TTCheck/view/table/HomeTableViewController.swift"
-                  timestampString = "533420675.081913"
+                  timestampString = "533422156.376184"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "104"
@@ -99,7 +99,7 @@
                   moduleName = "TTCheck"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jp/git/TTCheck/TTCheck/view/table/HomeTableViewController.swift"
-                  timestampString = "533420675.084766"
+                  timestampString = "533422156.382021"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "105"
@@ -107,6 +107,22 @@
                   offsetFromSymbolStart = "36">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTCheck/view/SplashViewController.swift"
+            timestampString = "533422257.237957"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "showLottie()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
