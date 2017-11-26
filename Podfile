@@ -9,7 +9,8 @@ target 'TTCheck' do
   pod 'PureLayout'
   pod 'Alamofire'
   pod 'TTMVC'
-
+  pod 'SwipeCellKit'
+  
   # Pods for TTCheck
 
   target 'TTCheckTests' do

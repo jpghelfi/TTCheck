@@ -36,4 +36,26 @@ class NewMonitorDAO: TTGenericDAO {
         }
     }
     
+    func deleteMonitorWith(id: String, completion: @escaping (NewMonitorStatusDTO) -> ()){
+        
+        let url = "https://api.uptimerobot.com/v2/deleteMonitor"
+
+        
+        var params: [String:String] = [:]
+        params["api_key"] = apiKey
+        params["id"] = id
+        
+        Alamofire.request(url, method: .post, parameters: params, encoding: JSONEncoding.default, headers: nil).responseJSON {
+            
+            (myResponse) in
+            
+            if let dic = myResponse.value as? [String:AnyObject], let status = dic["stat"] as? String{
+                
+                let newStatus = NewMonitorStatusDTO(status: status)
+                completion(newStatus)
+            }
+            
+        }
+    }
+    
 }

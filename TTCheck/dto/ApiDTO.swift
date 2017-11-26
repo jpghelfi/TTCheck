@@ -12,6 +12,7 @@ import TTMVC
 
 class ApiDTO: TTGenericDTO {
     
+    var id: NSNumber?
     var apiName: String?
     var apiStatus: StatusDTO?
     var lastTimeCheck: String?
@@ -21,7 +22,11 @@ class ApiDTO: TTGenericDTO {
     }
     
     override func loadFromDictionary(_ dictionary: [String : AnyObject]) {
-        super.loadFromDictionary(dictionary)
+//        super.loadFromDictionary(dictionary)
+        
+        if let theId = dictionary["id"] as? NSNumber{
+            self.id = theId
+        }
         
         self.apiName = dictionary["friendly_name"] as? String
         if let status = dictionary["status"] as? NSNumber{

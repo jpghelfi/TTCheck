@@ -9,7 +9,7 @@
 import Foundation
 import TTMVC
 
-class NewMonitorService: TTGenericService {
+class MonitorService: TTGenericService {
     
     func createNewMonitorWith(name: String, url: String, type: NSNumber = 1, completion: @escaping (NewMonitorStatusDTO) -> ()){
     
@@ -19,6 +19,15 @@ class NewMonitorService: TTGenericService {
             completion(response)
         }
         
+    }
+    
+    func deleteMonitorWith(id: String, completion: @escaping (NewMonitorStatusDTO) -> ()){
+        
+        let deleteMonitor = NewMonitorDAO()
+        deleteMonitor.deleteMonitorWith(id: id) { (response) in
+            
+            completion(response)
+        }
     }
     
     

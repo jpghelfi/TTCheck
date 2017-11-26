@@ -1,19 +1,22 @@
 PODS:
   - Alamofire (4.5.1)
   - PureLayout (3.0.2)
+  - SwipeCellKit (2.0.0)
   - TTMVC (0.4.0):
     - Alamofire (~> 4.4)
 
 DEPENDENCIES:
   - Alamofire
   - PureLayout
+  - SwipeCellKit
   - TTMVC
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  SwipeCellKit: 349c61ffde96ac3ae51c2691a03e421b5b29ee98
   TTMVC: 98ba387598570679b93f2e95b4be07abe0790426
 
-PODFILE CHECKSUM: a9d28dfc784ecead38252c0bb805df388d417d0d
+PODFILE CHECKSUM: c67278832e8cae3e9ede99d30b69b8966a4b5237
 
 COCOAPODS: 1.3.1

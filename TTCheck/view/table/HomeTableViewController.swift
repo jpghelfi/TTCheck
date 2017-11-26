@@ -8,6 +8,7 @@
 
 import UIKit
 import PureLayout
+import SwipeCellKit
 
 class HomeTableViewController: UITableViewController {
 
@@ -92,7 +93,30 @@ class HomeTableViewController: UITableViewController {
         return APICheckArray.count + 1
     }
     
-    fileprivate func getCellForRow(_ tableView: UITableView, _ indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, commit editingStyle:UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
+        
+        if editingStyle == .delete{
+            
+            let deleteService = MonitorService()
+            if let id = APICheckArray[indexPath.row].id{
+                let theId = String(describing: id)
+                deleteService.deleteMonitorWith(id: theId, completion: { (response) in
+                })
+            }
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if indexPath.row == APICheckArray.endIndex{
+        
+            present(AddMonitorViewController(), animated: true, completion: {
+                
+            })
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.row != APICheckArray.endIndex{
             
@@ -102,6 +126,7 @@ class HomeTableViewController: UITableViewController {
                 
                 homeCell.setupCell(api: api)
             }
+    
             return cell
         }else if indexPath.row == APICheckArray.endIndex{
             
@@ -115,27 +140,24 @@ class HomeTableViewController: UITableViewController {
         return UITableViewCell()
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        if indexPath.row == APICheckArray.endIndex{
-        
-            present(AddMonitorViewController(), animated: true, completion: {
-                
-            })
-        
-        }
-        
-        
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        return getCellForRow(tableView, indexPath)
-    }
-    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 140
     }
+    
+    
+//    @available(iOS 11.0, *)
+//    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+//
+//        let modifyAction = UIContextualAction(style: .destructive, title:  "Update", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
+//            print("Update action ...")
+//            success(true)
+//        })
+//        modifyAction.image = UIImage(named: "hammer")
+//        modifyAction.backgroundColor = .blue
+//
+//        return UISwipeActionsConfiguration(actions: [modifyAction])
+//
+//    }
     
 }
 

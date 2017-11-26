@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "60ECE73C6FB3B3818011402655B0AEE5"
+               BlueprintIdentifier = "87F107B7874AD895D6E8385E53FA86DD"
                BuildableName = "Pods_TTCheck.framework"
                BlueprintName = "Pods-TTCheck"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "60ECE73C6FB3B3818011402655B0AEE5"
+            BlueprintIdentifier = "87F107B7874AD895D6E8385E53FA86DD"
             BuildableName = "Pods_TTCheck.framework"
             BlueprintName = "Pods-TTCheck"
             ReferencedContainer = "container:Pods.xcodeproj">
