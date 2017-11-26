@@ -28,6 +28,8 @@ class HomeTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.setupNavigation()
+
         self.view.backgroundColor = UIColor.getLightGrayColor()
         
         self.loadData()
@@ -36,7 +38,6 @@ class HomeTableViewController: UITableViewController {
 
         self.setupTableView()
         
-        self.setupNavigation()
     }
     
     fileprivate func setupRefreshControl() {
@@ -65,7 +66,7 @@ class HomeTableViewController: UITableViewController {
         
         UIApplication.shared.isStatusBarHidden = false
 
-        //        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Update", style: .plain, target: self, action: #selector(update))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Update", style: .plain, target: self, action: #selector(update))
         
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
@@ -78,7 +79,7 @@ class HomeTableViewController: UITableViewController {
         } else {
             self.automaticallyAdjustsScrollViewInsets = false
         }
-        self.navigationController?.navigationBar.frame = CGRect(x: 0, y: 0, width: 320, height: 200)
+//        self.navigationController?.navigationBar.frame = CGRect(x: 0, y: 0, width: 320, height: 200)
     }
     
     @objc private func update(){

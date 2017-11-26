@@ -68,11 +68,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTCheck/view/table/HomeTableViewController.swift"
-            timestampString = "533419082.242626"
+            timestampString = "533420674.924967"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "tableView(_:editActionsForRowAt:)"
             landmarkType = "7">
             <Locations>
@@ -84,12 +84,12 @@
                   moduleName = "TTCheck"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jp/git/TTCheck/TTCheck/view/table/HomeTableViewController.swift"
-                  timestampString = "533351851.837528"
+                  timestampString = "533420675.081913"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "114"
-                  endingLineNumber = "114"
-                  offsetFromSymbolStart = "34">
+                  startingLineNumber = "104"
+                  endingLineNumber = "104"
+                  offsetFromSymbolStart = "36">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -99,12 +99,12 @@
                   moduleName = "TTCheck"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jp/git/TTCheck/TTCheck/view/table/HomeTableViewController.swift"
-                  timestampString = "533351851.848064"
+                  timestampString = "533420675.084766"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "117"
-                  endingLineNumber = "117"
-                  offsetFromSymbolStart = "25">
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "36">
                </Location>
             </Locations>
          </BreakpointContent>

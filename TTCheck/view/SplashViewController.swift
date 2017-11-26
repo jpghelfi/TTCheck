@@ -24,7 +24,7 @@ class SplashViewController: UIViewController {
         self.view.addSubview(self.label)
         
         
-        Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(self.splashTimeOut(sender:)), userInfo: nil, repeats: false)
+        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.splashTimeOut(sender:)), userInfo: nil, repeats: false)
         // Do any additional setup after loading the view.
         
         setupConstraints()
@@ -32,12 +32,13 @@ class SplashViewController: UIViewController {
     
     @objc func splashTimeOut(sender : Timer){
         let vc = HomeTableViewController()
-        AppDelegate.sharedInstance().window?.rootViewController = vc
+        let nav = UINavigationController(rootViewController: vc);
+        AppDelegate.sharedInstance().window?.rootViewController = nav
+        AppDelegate.sharedInstance().window?.makeKeyAndVisible()
     }
     
     private func setupConstraints() {
         self.label.autoCenterInSuperview()
-
     }
 
     /*
