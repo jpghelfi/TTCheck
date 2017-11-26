@@ -16,7 +16,6 @@
 		E822D9321FC2078600E01E06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E822D9301FC2078600E01E06 /* Main.storyboard */; };
 		E822D9351FC2078600E01E06 /* TTCheck.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E822D9331FC2078600E01E06 /* TTCheck.xcdatamodeld */; };
 		E822D9371FC2078600E01E06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E822D9361FC2078600E01E06 /* Assets.xcassets */; };
-		E822D93A1FC2078600E01E06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E822D9381FC2078600E01E06 /* LaunchScreen.storyboard */; };
 		E822D9451FC2078700E01E06 /* TTCheckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E822D9441FC2078700E01E06 /* TTCheckTests.swift */; };
 		E822D9501FC2078700E01E06 /* TTCheckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E822D94F1FC2078700E01E06 /* TTCheckUITests.swift */; };
 		E822D95E1FC20A8900E01E06 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E822D95D1FC20A8900E01E06 /* HomeTableViewController.swift */; };
@@ -67,7 +66,6 @@
 		E822D9311FC2078600E01E06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E822D9341FC2078600E01E06 /* TTCheck.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TTCheck.xcdatamodel; sourceTree = "<group>"; };
 		E822D9361FC2078600E01E06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E822D9391FC2078600E01E06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E822D93B1FC2078600E01E06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E822D9401FC2078700E01E06 /* TTCheckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTCheckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E822D9441FC2078700E01E06 /* TTCheckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTCheckTests.swift; sourceTree = "<group>"; };
@@ -79,6 +77,7 @@
 		E822D95F1FC20AE600E01E06 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		E822D9671FC20BE500E01E06 /* ApiDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDTO.swift; sourceTree = "<group>"; };
 		E822D9691FC20C4600E01E06 /* StatusDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusDTO.swift; sourceTree = "<group>"; };
+		E84A07011FCB4D510016653D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E86AA8551FC9CB4B00718243 /* AddMonitorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMonitorTableViewCell.swift; sourceTree = "<group>"; };
 		E86AA8581FC9DE5400718243 /* NewMonitorDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMonitorDTO.swift; sourceTree = "<group>"; };
 		E86AA85A1FC9E17D00718243 /* AddMonitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMonitorViewController.swift; sourceTree = "<group>"; };
@@ -171,9 +170,9 @@
 				E822D9631FC20B7900E01E06 /* service */,
 				E822D9641FC20B8000E01E06 /* view */,
 				E822D92C1FC2078600E01E06 /* AppDelegate.swift */,
+				E84A07001FCB4D510016653D /* LaunchScreen.storyboard */,
 				E822D9301FC2078600E01E06 /* Main.storyboard */,
 				E822D9361FC2078600E01E06 /* Assets.xcassets */,
-				E822D9381FC2078600E01E06 /* LaunchScreen.storyboard */,
 				E822D93B1FC2078600E01E06 /* Info.plist */,
 				E822D9331FC2078600E01E06 /* TTCheck.xcdatamodeld */,
 			);
@@ -379,7 +378,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E822D93A1FC2078600E01E06 /* LaunchScreen.storyboard in Resources */,
 				E822D9371FC2078600E01E06 /* Assets.xcassets in Resources */,
 				E822D9321FC2078600E01E06 /* Main.storyboard in Resources */,
 			);
@@ -623,10 +621,10 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		E822D9381FC2078600E01E06 /* LaunchScreen.storyboard */ = {
+		E84A07001FCB4D510016653D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E822D9391FC2078600E01E06 /* Base */,
+				E84A07011FCB4D510016653D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
