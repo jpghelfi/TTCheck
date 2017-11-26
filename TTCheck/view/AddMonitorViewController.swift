@@ -136,7 +136,7 @@ class AddMonitorViewController: UIViewController {
         }
     }
     
-    private func checkStatus(newMonitorStatus: NewMonitorStatusDTO){
+    private func checkStatus(newMonitorStatus: MonitorStatusDTO){
         
         if newMonitorStatus.isMonitorSaved(){
             

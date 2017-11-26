@@ -9,7 +9,7 @@
 import Foundation
 import TTMVC
 
-class NewMonitorStatusDTO: TTGenericDTO {
+class MonitorStatusDTO: TTGenericDTO {
     
     var status: String?
     

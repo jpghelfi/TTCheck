@@ -26,9 +26,9 @@
 		E86AA8561FC9CB4B00718243 /* AddMonitorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA8551FC9CB4B00718243 /* AddMonitorTableViewCell.swift */; };
 		E86AA8591FC9DE5400718243 /* NewMonitorDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA8581FC9DE5400718243 /* NewMonitorDTO.swift */; };
 		E86AA85B1FC9E17D00718243 /* AddMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA85A1FC9E17D00718243 /* AddMonitorViewController.swift */; };
-		E86AA85D1FC9F8EA00718243 /* NewMonitorDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA85C1FC9F8EA00718243 /* NewMonitorDAO.swift */; };
-		E86AA85F1FC9FEAB00718243 /* NewMonitorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA85E1FC9FEAB00718243 /* NewMonitorService.swift */; };
-		E86AA8611FCA05FB00718243 /* NewMonitorStatusDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA8601FCA05FB00718243 /* NewMonitorStatusDTO.swift */; };
+		E86AA85D1FC9F8EA00718243 /* MonitorDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA85C1FC9F8EA00718243 /* MonitorDAO.swift */; };
+		E86AA85F1FC9FEAB00718243 /* MonitorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA85E1FC9FEAB00718243 /* MonitorService.swift */; };
+		E86AA8611FCA05FB00718243 /* MonitorStatusDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA8601FCA05FB00718243 /* MonitorStatusDTO.swift */; };
 		E8DE33971FC2346A004F0A13 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DE33961FC2346A004F0A13 /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,9 +81,9 @@
 		E86AA8551FC9CB4B00718243 /* AddMonitorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMonitorTableViewCell.swift; sourceTree = "<group>"; };
 		E86AA8581FC9DE5400718243 /* NewMonitorDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMonitorDTO.swift; sourceTree = "<group>"; };
 		E86AA85A1FC9E17D00718243 /* AddMonitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMonitorViewController.swift; sourceTree = "<group>"; };
-		E86AA85C1FC9F8EA00718243 /* NewMonitorDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMonitorDAO.swift; sourceTree = "<group>"; };
-		E86AA85E1FC9FEAB00718243 /* NewMonitorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMonitorService.swift; sourceTree = "<group>"; };
-		E86AA8601FCA05FB00718243 /* NewMonitorStatusDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMonitorStatusDTO.swift; sourceTree = "<group>"; };
+		E86AA85C1FC9F8EA00718243 /* MonitorDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorDAO.swift; sourceTree = "<group>"; };
+		E86AA85E1FC9FEAB00718243 /* MonitorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorService.swift; sourceTree = "<group>"; };
+		E86AA8601FCA05FB00718243 /* MonitorStatusDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorStatusDTO.swift; sourceTree = "<group>"; };
 		E8DE33961FC2346A004F0A13 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -202,7 +202,7 @@
 				E822D9671FC20BE500E01E06 /* ApiDTO.swift */,
 				E822D9691FC20C4600E01E06 /* StatusDTO.swift */,
 				E86AA8581FC9DE5400718243 /* NewMonitorDTO.swift */,
-				E86AA8601FCA05FB00718243 /* NewMonitorStatusDTO.swift */,
+				E86AA8601FCA05FB00718243 /* MonitorStatusDTO.swift */,
 			);
 			path = dto;
 			sourceTree = "<group>";
@@ -211,7 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				E81CDE441FC354F400EF2590 /* ApiDAO.swift */,
-				E86AA85C1FC9F8EA00718243 /* NewMonitorDAO.swift */,
+				E86AA85C1FC9F8EA00718243 /* MonitorDAO.swift */,
 			);
 			path = dao;
 			sourceTree = "<group>";
@@ -220,7 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				E816AFBB1FC37ACF00F23B93 /* ApiService.swift */,
-				E86AA85E1FC9FEAB00718243 /* NewMonitorService.swift */,
+				E86AA85E1FC9FEAB00718243 /* MonitorService.swift */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -562,16 +562,16 @@
 				E86AA8561FC9CB4B00718243 /* AddMonitorTableViewCell.swift in Sources */,
 				E86AA8591FC9DE5400718243 /* NewMonitorDTO.swift in Sources */,
 				E822D95E1FC20A8900E01E06 /* HomeTableViewController.swift in Sources */,
-				E86AA85F1FC9FEAB00718243 /* NewMonitorService.swift in Sources */,
+				E86AA85F1FC9FEAB00718243 /* MonitorService.swift in Sources */,
 				E8DE33971FC2346A004F0A13 /* UIColorExtension.swift in Sources */,
 				E822D9681FC20BE500E01E06 /* ApiDTO.swift in Sources */,
-				E86AA8611FCA05FB00718243 /* NewMonitorStatusDTO.swift in Sources */,
+				E86AA8611FCA05FB00718243 /* MonitorStatusDTO.swift in Sources */,
 				E86AA85B1FC9E17D00718243 /* AddMonitorViewController.swift in Sources */,
 				E822D92D1FC2078600E01E06 /* AppDelegate.swift in Sources */,
 				E822D96A1FC20C4600E01E06 /* StatusDTO.swift in Sources */,
 				E816AFBC1FC37ACF00F23B93 /* ApiService.swift in Sources */,
 				E81CDE451FC354F400EF2590 /* ApiDAO.swift in Sources */,
-				E86AA85D1FC9F8EA00718243 /* NewMonitorDAO.swift in Sources */,
+				E86AA85D1FC9F8EA00718243 /* MonitorDAO.swift in Sources */,
 				E822D9601FC20AE600E01E06 /* HomeTableViewCell.swift in Sources */,
 				E822D9351FC2078600E01E06 /* TTCheck.xcdatamodeld in Sources */,
 			);

@@ -101,6 +101,9 @@ class HomeTableViewController: UITableViewController {
             if let id = APICheckArray[indexPath.row].id{
                 let theId = String(describing: id)
                 deleteService.deleteMonitorWith(id: theId, completion: { (response) in
+                    
+                    self.APICheckArray.remove(at: indexPath.row)
+                    self.tableView.deleteRows(at: [indexPath], with: .fade)
                 })
             }
         }

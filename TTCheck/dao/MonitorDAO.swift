@@ -10,12 +10,12 @@ import Foundation
 import TTMVC
 import Alamofire
 
-class NewMonitorDAO: TTGenericDAO {
+class MonitorDAO: TTGenericDAO {
     
     let baseURL = "https://api.uptimerobot.com/v2/newMonitor"
     let apiKey = "u517083-c94c552b912c91bd57e6c152"
     
-    func createNewMonitorWith(name: String, url: String, type: String = "1", completion: @escaping (NewMonitorStatusDTO) -> ()){
+    func createNewMonitorWith(name: String, url: String, type: String = "1", completion: @escaping (MonitorStatusDTO) -> ()){
     
         var params: [String:String] = [:]
         params["api_key"] = apiKey
@@ -29,14 +29,14 @@ class NewMonitorDAO: TTGenericDAO {
             
             if let dic = myResponse.value as? [String:AnyObject], let status = dic["stat"] as? String{
                 
-                let newStatus = NewMonitorStatusDTO(status: status)
+                let newStatus = MonitorStatusDTO(status: status)
                 completion(newStatus)
             }
             
         }
     }
     
-    func deleteMonitorWith(id: String, completion: @escaping (NewMonitorStatusDTO) -> ()){
+    func deleteMonitorWith(id: String, completion: @escaping (MonitorStatusDTO) -> ()){
         
         let url = "https://api.uptimerobot.com/v2/deleteMonitor"
 
@@ -51,7 +51,7 @@ class NewMonitorDAO: TTGenericDAO {
             
             if let dic = myResponse.value as? [String:AnyObject], let status = dic["stat"] as? String{
                 
-                let newStatus = NewMonitorStatusDTO(status: status)
+                let newStatus = MonitorStatusDTO(status: status)
                 completion(newStatus)
             }
             

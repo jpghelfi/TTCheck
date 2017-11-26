@@ -11,9 +11,9 @@ import TTMVC
 
 class MonitorService: TTGenericService {
     
-    func createNewMonitorWith(name: String, url: String, type: NSNumber = 1, completion: @escaping (NewMonitorStatusDTO) -> ()){
+    func createNewMonitorWith(name: String, url: String, type: NSNumber = 1, completion: @escaping (MonitorStatusDTO) -> ()){
     
-        let newMonitorDAO = NewMonitorDAO()
+        let newMonitorDAO = MonitorDAO()
         newMonitorDAO.createNewMonitorWith(name: name, url: url) { (response) in
             
             completion(response)
@@ -21,9 +21,9 @@ class MonitorService: TTGenericService {
         
     }
     
-    func deleteMonitorWith(id: String, completion: @escaping (NewMonitorStatusDTO) -> ()){
+    func deleteMonitorWith(id: String, completion: @escaping (MonitorStatusDTO) -> ()){
         
-        let deleteMonitor = NewMonitorDAO()
+        let deleteMonitor = MonitorDAO()
         deleteMonitor.deleteMonitorWith(id: id) { (response) in
             
             completion(response)
