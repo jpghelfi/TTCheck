@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AB1FCD699B005B09039C554AF39D6611"
-               BuildableName = "Pods_TTCheck.framework"
-               BlueprintName = "Pods-TTCheck"
+               BlueprintIdentifier = "03D77E6BE1142DADF03457DE305E3F10"
+               BuildableName = "Pods_TTCheck_wachOS_Extension.framework"
+               BlueprintName = "Pods-TTCheck-wachOS Extension"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AB1FCD699B005B09039C554AF39D6611"
-            BuildableName = "Pods_TTCheck.framework"
-            BlueprintName = "Pods-TTCheck"
+            BlueprintIdentifier = "03D77E6BE1142DADF03457DE305E3F10"
+            BuildableName = "Pods_TTCheck_wachOS_Extension.framework"
+            BlueprintName = "Pods-TTCheck-wachOS Extension"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

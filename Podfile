@@ -2,6 +2,7 @@
 # platform :ios, '9.0'
 
 
+
 target 'TTCheck' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
@@ -13,6 +14,8 @@ target 'TTCheck' do
   pod 'lottie-ios'
   
   # Pods for TTCheck
+
+
 
   target 'TTCheckTests' do
     inherit! :search_paths
@@ -26,6 +29,16 @@ target 'TTCheck' do
   end
   
   
+end
+
+target 'TTCheck-wachOS Extension' do
+    use_frameworks!
+    
+    
+    pod 'Alamofire'
+#    pod 'TTMVC'
+
+    
 end
 
 post_install do |installer|

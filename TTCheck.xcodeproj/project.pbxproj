@@ -22,6 +22,7 @@
 		E822D9601FC20AE600E01E06 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E822D95F1FC20AE600E01E06 /* HomeTableViewCell.swift */; };
 		E822D9681FC20BE500E01E06 /* ApiDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E822D9671FC20BE500E01E06 /* ApiDTO.swift */; };
 		E822D96A1FC20C4600E01E06 /* StatusDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E822D9691FC20C4600E01E06 /* StatusDTO.swift */; };
+		E825697CD5ED8D3ADB53FF2B /* Pods_TTCheck_wachOS_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7FF2C9D8806386A0579169 /* Pods_TTCheck_wachOS_Extension.framework */; };
 		E86AA8561FC9CB4B00718243 /* AddMonitorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA8551FC9CB4B00718243 /* AddMonitorTableViewCell.swift */; };
 		E86AA8591FC9DE5400718243 /* NewMonitorDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA8581FC9DE5400718243 /* NewMonitorDTO.swift */; };
 		E86AA85B1FC9E17D00718243 /* AddMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA85A1FC9E17D00718243 /* AddMonitorViewController.swift */; };
@@ -39,6 +40,13 @@
 		E8B521DE1FCE485B00131AEE /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B521DD1FCE485B00131AEE /* NotificationController.swift */; };
 		E8B521E01FCE485B00131AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8B521DF1FCE485B00131AEE /* Assets.xcassets */; };
 		E8B521E51FCE485B00131AEE /* TTCheck-wachOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E8B521C81FCE485B00131AEE /* TTCheck-wachOS.app */; };
+		E8B521F31FCE4CDC00131AEE /* ApiDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B521F21FCE4CDC00131AEE /* ApiDTO.swift */; };
+		E8B521F71FCE4D0C00131AEE /* ApiServicew.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B521F61FCE4D0C00131AEE /* ApiServicew.swift */; };
+		E8B521FA1FCE4D4D00131AEE /* ApiDAOw.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B521F91FCE4D4D00131AEE /* ApiDAOw.swift */; };
+		E8B521FC1FCE4D5B00131AEE /* ApiDTOw.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B521FB1FCE4D5B00131AEE /* ApiDTOw.swift */; };
+		E8B521FE1FCE4DB800131AEE /* TTGenericDTOw.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B521FD1FCE4DB800131AEE /* TTGenericDTOw.swift */; };
+		E8B522001FCE4F1C00131AEE /* StatusDTOw.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B521FF1FCE4F1C00131AEE /* StatusDTOw.swift */; };
+		E8B522021FCE4F4B00131AEE /* MonitorStatusDTOw.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B522011FCE4F4B00131AEE /* MonitorStatusDTOw.swift */; };
 		E8DE33971FC2346A004F0A13 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DE33961FC2346A004F0A13 /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -105,8 +113,11 @@
 		6FC1EB5BF5B68C185B29A49E /* Pods_TTCheckUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTCheckUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		916E3DD5D6D8186485F62F97 /* Pods-TTCheckUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTCheckUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTCheckUITests/Pods-TTCheckUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9C92A169C843208D1884E642 /* Pods-TTCheckUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTCheckUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTCheckUITests/Pods-TTCheckUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C728DCC444AC439E83705783 /* Pods-TTCheck-wachOS Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTCheck-wachOS Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTCheck-wachOS Extension/Pods-TTCheck-wachOS Extension.release.xcconfig"; sourceTree = "<group>"; };
 		CD7C8D5475E6E8FDC5E29A73 /* Pods-TTCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTCheck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTCheck/Pods-TTCheck.debug.xcconfig"; sourceTree = "<group>"; };
+		CE7FF2C9D8806386A0579169 /* Pods_TTCheck_wachOS_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTCheck_wachOS_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D38D6378EB761C38899030CB /* Pods-TTCheckTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTCheckTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTCheckTests/Pods-TTCheckTests.release.xcconfig"; sourceTree = "<group>"; };
+		E0528CD373E5CAC855FD3651 /* Pods-TTCheck-wachOS Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTCheck-wachOS Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTCheck-wachOS Extension/Pods-TTCheck-wachOS Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		E17FD70F9D137289DB80196C /* Pods_TTCheckTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTCheckTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E816AFBB1FC37ACF00F23B93 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		E81CDE441FC354F400EF2590 /* ApiDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDAO.swift; sourceTree = "<group>"; };
@@ -146,10 +157,24 @@
 		E8B521DF1FCE485B00131AEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8B521E11FCE485B00131AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8B521E21FCE485B00131AEE /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		E8B521F21FCE4CDC00131AEE /* ApiDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDTO.swift; sourceTree = "<group>"; };
+		E8B521F61FCE4D0C00131AEE /* ApiServicew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServicew.swift; sourceTree = "<group>"; };
+		E8B521F91FCE4D4D00131AEE /* ApiDAOw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDAOw.swift; sourceTree = "<group>"; };
+		E8B521FB1FCE4D5B00131AEE /* ApiDTOw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDTOw.swift; sourceTree = "<group>"; };
+		E8B521FD1FCE4DB800131AEE /* TTGenericDTOw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTGenericDTOw.swift; sourceTree = "<group>"; };
+		E8B521FF1FCE4F1C00131AEE /* StatusDTOw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusDTOw.swift; sourceTree = "<group>"; };
+		E8B522011FCE4F4B00131AEE /* MonitorStatusDTOw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorStatusDTOw.swift; sourceTree = "<group>"; };
 		E8DE33961FC2346A004F0A13 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		963376C9E19480D80C1771B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E822D9261FC2078600E01E06 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -178,6 +203,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E825697CD5ED8D3ADB53FF2B /* Pods_TTCheck_wachOS_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +219,8 @@
 				D38D6378EB761C38899030CB /* Pods-TTCheckTests.release.xcconfig */,
 				916E3DD5D6D8186485F62F97 /* Pods-TTCheckUITests.debug.xcconfig */,
 				9C92A169C843208D1884E642 /* Pods-TTCheckUITests.release.xcconfig */,
+				E0528CD373E5CAC855FD3651 /* Pods-TTCheck-wachOS Extension.debug.xcconfig */,
+				C728DCC444AC439E83705783 /* Pods-TTCheck-wachOS Extension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -203,6 +231,7 @@
 				05722EB2448A0C08F1F5AA45 /* Pods_TTCheck.framework */,
 				E17FD70F9D137289DB80196C /* Pods_TTCheckTests.framework */,
 				6FC1EB5BF5B68C185B29A49E /* Pods_TTCheckUITests.framework */,
+				CE7FF2C9D8806386A0579169 /* Pods_TTCheck_wachOS_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -339,14 +368,45 @@
 		E8B521D81FCE485B00131AEE /* TTCheck-wachOS Extension */ = {
 			isa = PBXGroup;
 			children = (
+				E8B521F41FCE4CF300131AEE /* dto */,
+				E8B521F51FCE4CF900131AEE /* dao */,
+				E8B521F81FCE4D1600131AEE /* service */,
 				E8B521D91FCE485B00131AEE /* InterfaceController.swift */,
 				E8B521DB1FCE485B00131AEE /* ExtensionDelegate.swift */,
 				E8B521DD1FCE485B00131AEE /* NotificationController.swift */,
 				E8B521DF1FCE485B00131AEE /* Assets.xcassets */,
 				E8B521E11FCE485B00131AEE /* Info.plist */,
 				E8B521E21FCE485B00131AEE /* PushNotificationPayload.apns */,
+				E8B521F21FCE4CDC00131AEE /* ApiDTO.swift */,
 			);
 			path = "TTCheck-wachOS Extension";
+			sourceTree = "<group>";
+		};
+		E8B521F41FCE4CF300131AEE /* dto */ = {
+			isa = PBXGroup;
+			children = (
+				E8B521FB1FCE4D5B00131AEE /* ApiDTOw.swift */,
+				E8B521FD1FCE4DB800131AEE /* TTGenericDTOw.swift */,
+				E8B522011FCE4F4B00131AEE /* MonitorStatusDTOw.swift */,
+				E8B521FF1FCE4F1C00131AEE /* StatusDTOw.swift */,
+			);
+			path = dto;
+			sourceTree = "<group>";
+		};
+		E8B521F51FCE4CF900131AEE /* dao */ = {
+			isa = PBXGroup;
+			children = (
+				E8B521F91FCE4D4D00131AEE /* ApiDAOw.swift */,
+			);
+			path = dao;
+			sourceTree = "<group>";
+		};
+		E8B521F81FCE4D1600131AEE /* service */ = {
+			isa = PBXGroup;
+			children = (
+				E8B521F61FCE4D0C00131AEE /* ApiServicew.swift */,
+			);
+			path = service;
 			sourceTree = "<group>";
 		};
 		E8DE33951FC2345C004F0A13 /* utils */ = {
@@ -431,6 +491,7 @@
 			buildPhases = (
 				E8B521C61FCE485B00131AEE /* Resources */,
 				E8B521E91FCE485B00131AEE /* Embed App Extensions */,
+				963376C9E19480D80C1771B8 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -446,9 +507,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8B521E61FCE485B00131AEE /* Build configuration list for PBXNativeTarget "TTCheck-wachOS Extension" */;
 			buildPhases = (
+				3DE7BC3B0D6F3917A0C6A815 /* [CP] Check Pods Manifest.lock */,
 				E8B521D01FCE485B00131AEE /* Sources */,
 				E8B521D11FCE485B00131AEE /* Frameworks */,
 				E8B521D21FCE485B00131AEE /* Resources */,
+				802BDD7131CA00C2128D4629 /* [CP] Embed Pods Frameworks */,
+				53411ADA7821AD5712A1BD58 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -568,7 +632,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TTCheck/Pods-TTCheck-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 				"${BUILT_PRODUCTS_DIR}/TTMVC/TTMVC.framework",
@@ -602,6 +666,39 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTCheck/Pods-TTCheck-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3DE7BC3B0D6F3917A0C6A815 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TTCheck-wachOS Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53411ADA7821AD5712A1BD58 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTCheck-wachOS Extension/Pods-TTCheck-wachOS Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		70D29EFD13A1EB33DDBE4C4F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -615,6 +712,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTCheckUITests/Pods-TTCheckUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		802BDD7131CA00C2128D4629 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TTCheck-wachOS Extension/Pods-TTCheck-wachOS Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-watchOS/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTCheck-wachOS Extension/Pods-TTCheck-wachOS Extension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		86F1A6B32115E473F0150A90 /* [CP] Embed Pods Frameworks */ = {
@@ -762,9 +877,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8B522021FCE4F4B00131AEE /* MonitorStatusDTOw.swift in Sources */,
+				E8B521FC1FCE4D5B00131AEE /* ApiDTOw.swift in Sources */,
+				E8B521FE1FCE4DB800131AEE /* TTGenericDTOw.swift in Sources */,
+				E8B521F31FCE4CDC00131AEE /* ApiDTO.swift in Sources */,
 				E8B521DE1FCE485B00131AEE /* NotificationController.swift in Sources */,
 				E8B521DC1FCE485B00131AEE /* ExtensionDelegate.swift in Sources */,
 				E8B521DA1FCE485B00131AEE /* InterfaceController.swift in Sources */,
+				E8B521F71FCE4D0C00131AEE /* ApiServicew.swift in Sources */,
+				E8B521FA1FCE4D4D00131AEE /* ApiDAOw.swift in Sources */,
+				E8B522001FCE4F1C00131AEE /* StatusDTOw.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -861,7 +983,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -912,7 +1034,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -1034,6 +1156,7 @@
 		};
 		E8B521E71FCE485B00131AEE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0528CD373E5CAC855FD3651 /* Pods-TTCheck-wachOS Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -1052,6 +1175,7 @@
 		};
 		E8B521E81FCE485B00131AEE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C728DCC444AC439E83705783 /* Pods-TTCheck-wachOS Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;

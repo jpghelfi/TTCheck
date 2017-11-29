@@ -102,18 +102,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/TTMVC/TTMVC.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-watchOS/Alamofire.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/TTMVC/TTMVC.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-watchOS/Alamofire.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

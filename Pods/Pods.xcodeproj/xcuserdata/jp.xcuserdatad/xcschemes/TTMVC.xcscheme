@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'C4662F56EEFE7CE9C645CB085AFCF582'
+               BlueprintIdentifier = 'AE4BA86F7AF0F4911A76FA134ED8D0E4'
                BlueprintName = 'TTMVC'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'TTMVC.framework'>

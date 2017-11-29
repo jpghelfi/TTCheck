@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AB1FCD699B005B09039C554AF39D6611"
-               BuildableName = "Pods_TTCheck.framework"
-               BlueprintName = "Pods-TTCheck"
+               BlueprintIdentifier = "173E4104E4F2CE5ECC896A154802C6D5"
+               BuildableName = "Alamofire.framework"
+               BlueprintName = "Alamofire-watchOS"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AB1FCD699B005B09039C554AF39D6611"
-            BuildableName = "Pods_TTCheck.framework"
-            BlueprintName = "Pods-TTCheck"
+            BlueprintIdentifier = "173E4104E4F2CE5ECC896A154802C6D5"
+            BuildableName = "Alamofire.framework"
+            BlueprintName = "Alamofire-watchOS"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
