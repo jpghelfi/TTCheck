@@ -84,28 +84,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTCheck-wachOS Extension/InterfaceController.swift"
-            timestampString = "533617352.550978"
+            timestampString = "533616206.478907"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "setupTable()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TTCheck-wachOS Extension/InterfaceController.swift"
-            timestampString = "533617352.551067"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "awake(withContext:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
