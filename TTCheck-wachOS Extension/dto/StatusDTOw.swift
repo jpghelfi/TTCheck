@@ -52,7 +52,7 @@ class StatusDTOw: TTGenericDTO {
                 self.color = .green
             }else{
                 
-                self.statusText = "Fail"
+                self.statusText = "ERROR"
                 self.color = .red
             }
         }
