@@ -56,7 +56,7 @@ class HomeTableViewController: UITableViewController {
         self.tableView.register(HomeTableViewCell.self, forCellReuseIdentifier: "homeCell")
         self.tableView.register(AddMonitorTableViewCell.self, forCellReuseIdentifier: "addMonitorCell")
         
-        self.tableView.contentInset = .init(top: 88, left: 0, bottom: 0, right: 0)
+        self.tableView.contentInset = .init(top: 0, left: 0, bottom: 0, right: 0)
         self.tableView.separatorStyle = .none
     }
     
@@ -70,8 +70,10 @@ class HomeTableViewController: UITableViewController {
 //        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
 //        self.navigationController?.navigationBar.shadowImage = UIImage()
 //        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.navigationBar.backgroundColor = UIColor.getLightGrayColor()
-        self.navigationController?.view.backgroundColor = UIColor.clear
+        let navImage = UIImage(named: "navigationBackground")
+        self.navigationController?.navigationBar.setBackgroundImage(navImage, for: .default)
+//        self.navigationController?.navigationBar.backgroundColor = UIColor.getLightGrayColor()
+//        self.navigationController?.view.backgroundColor = UIColor.clear
         
         
         if #available(iOS 11.0, *) {
@@ -170,6 +172,10 @@ class HomeTableViewController: UITableViewController {
 //        return UISwipeActionsConfiguration(actions: [modifyAction])
 //
 //    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        setupRefreshControl()
+    }
     
 }
 

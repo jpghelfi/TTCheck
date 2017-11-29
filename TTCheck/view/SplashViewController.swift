@@ -62,8 +62,8 @@ class SplashViewController: UIViewController {
         
         self.lottie.autoPinEdge(.top, to: .bottom, of: self.label)
         self.lottie.autoAlignAxis(.vertical, toSameAxisOf: self.view)
-        self.lottie.autoSetDimension(.height, toSize: 100)
-        self.lottie.autoSetDimension(.width, toSize: 100)
+        self.lottie.autoSetDimension(.height, toSize: 150)
+        self.lottie.autoSetDimension(.width, toSize: 150)
         self.lottie.contentMode = .scaleAspectFill
 
     }

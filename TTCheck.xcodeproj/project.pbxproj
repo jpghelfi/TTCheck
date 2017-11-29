@@ -31,7 +31,14 @@
 		E86AA8651FCB0C8D00718243 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA8641FCB0C8D00718243 /* SplashViewController.swift */; };
 		E86AB96F1FCB4EA10085F692 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E86AB96E1FCB4EA10085F692 /* Launch Screen.storyboard */; };
 		E86AB9731FCB5F040085F692 /* done.json in Resources */ = {isa = PBXBuildFile; fileRef = E86AB9721FCB5C300085F692 /* done.json */; };
-		E86AB9771FCB5F9B0085F692 /* lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = E86AB9761FCB5F970085F692 /* lottie.json */; };
+		E8B521CC1FCE485B00131AEE /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8B521CA1FCE485B00131AEE /* Interface.storyboard */; };
+		E8B521CE1FCE485B00131AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8B521CD1FCE485B00131AEE /* Assets.xcassets */; };
+		E8B521D51FCE485B00131AEE /* TTCheck-wachOS Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E8B521D41FCE485B00131AEE /* TTCheck-wachOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E8B521DA1FCE485B00131AEE /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B521D91FCE485B00131AEE /* InterfaceController.swift */; };
+		E8B521DC1FCE485B00131AEE /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B521DB1FCE485B00131AEE /* ExtensionDelegate.swift */; };
+		E8B521DE1FCE485B00131AEE /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B521DD1FCE485B00131AEE /* NotificationController.swift */; };
+		E8B521E01FCE485B00131AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8B521DF1FCE485B00131AEE /* Assets.xcassets */; };
+		E8B521E51FCE485B00131AEE /* TTCheck-wachOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E8B521C81FCE485B00131AEE /* TTCheck-wachOS.app */; };
 		E8DE33971FC2346A004F0A13 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DE33961FC2346A004F0A13 /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +57,46 @@
 			remoteGlobalIDString = E822D9281FC2078600E01E06;
 			remoteInfo = TTCheck;
 		};
+		E8B521D61FCE485B00131AEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E822D9211FC2078600E01E06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8B521D31FCE485B00131AEE;
+			remoteInfo = "TTCheck-wachOS Extension";
+		};
+		E8B521E31FCE485B00131AEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E822D9211FC2078600E01E06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8B521C71FCE485B00131AEE;
+			remoteInfo = "TTCheck-wachOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E8B521E91FCE485B00131AEE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E8B521D51FCE485B00131AEE /* TTCheck-wachOS Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B521ED1FCE485B00131AEE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E8B521E51FCE485B00131AEE /* TTCheck-wachOS.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		05722EB2448A0C08F1F5AA45 /* Pods_TTCheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTCheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,7 +135,17 @@
 		E86AA8641FCB0C8D00718243 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		E86AB96E1FCB4EA10085F692 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		E86AB9721FCB5C300085F692 /* done.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = done.json; sourceTree = "<group>"; };
-		E86AB9761FCB5F970085F692 /* lottie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = lottie.json; sourceTree = "<group>"; };
+		E8B521C81FCE485B00131AEE /* TTCheck-wachOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TTCheck-wachOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8B521CB1FCE485B00131AEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		E8B521CD1FCE485B00131AEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8B521CF1FCE485B00131AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8B521D41FCE485B00131AEE /* TTCheck-wachOS Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TTCheck-wachOS Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8B521D91FCE485B00131AEE /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		E8B521DB1FCE485B00131AEE /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		E8B521DD1FCE485B00131AEE /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		E8B521DF1FCE485B00131AEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8B521E11FCE485B00131AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8B521E21FCE485B00131AEE /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		E8DE33961FC2346A004F0A13 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +171,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				55F3CBE1173717A6B13AC6DE /* Pods_TTCheckUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B521D11FCE485B00131AEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +213,8 @@
 				E822D92B1FC2078600E01E06 /* TTCheck */,
 				E822D9431FC2078700E01E06 /* TTCheckTests */,
 				E822D94E1FC2078700E01E06 /* TTCheckUITests */,
+				E8B521C91FCE485B00131AEE /* TTCheck-wachOS */,
+				E8B521D81FCE485B00131AEE /* TTCheck-wachOS Extension */,
 				E822D92A1FC2078600E01E06 /* Products */,
 				12DA85A7501ADEB9AA0965D6 /* Pods */,
 				59B0EADD4B8B9E082D2F6D01 /* Frameworks */,
@@ -162,6 +227,8 @@
 				E822D9291FC2078600E01E06 /* TTCheck.app */,
 				E822D9401FC2078700E01E06 /* TTCheckTests.xctest */,
 				E822D94B1FC2078700E01E06 /* TTCheckUITests.xctest */,
+				E8B521C81FCE485B00131AEE /* TTCheck-wachOS.app */,
+				E8B521D41FCE485B00131AEE /* TTCheck-wachOS Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -238,7 +305,6 @@
 				E822D9661FC20BB200E01E06 /* cell */,
 				E86AA85A1FC9E17D00718243 /* AddMonitorViewController.swift */,
 				E86AA8641FCB0C8D00718243 /* SplashViewController.swift */,
-				E86AB9761FCB5F970085F692 /* lottie.json */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -258,6 +324,29 @@
 				E86AA8551FC9CB4B00718243 /* AddMonitorTableViewCell.swift */,
 			);
 			path = cell;
+			sourceTree = "<group>";
+		};
+		E8B521C91FCE485B00131AEE /* TTCheck-wachOS */ = {
+			isa = PBXGroup;
+			children = (
+				E8B521CA1FCE485B00131AEE /* Interface.storyboard */,
+				E8B521CD1FCE485B00131AEE /* Assets.xcassets */,
+				E8B521CF1FCE485B00131AEE /* Info.plist */,
+			);
+			path = "TTCheck-wachOS";
+			sourceTree = "<group>";
+		};
+		E8B521D81FCE485B00131AEE /* TTCheck-wachOS Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E8B521D91FCE485B00131AEE /* InterfaceController.swift */,
+				E8B521DB1FCE485B00131AEE /* ExtensionDelegate.swift */,
+				E8B521DD1FCE485B00131AEE /* NotificationController.swift */,
+				E8B521DF1FCE485B00131AEE /* Assets.xcassets */,
+				E8B521E11FCE485B00131AEE /* Info.plist */,
+				E8B521E21FCE485B00131AEE /* PushNotificationPayload.apns */,
+			);
+			path = "TTCheck-wachOS Extension";
 			sourceTree = "<group>";
 		};
 		E8DE33951FC2345C004F0A13 /* utils */ = {
@@ -282,10 +371,12 @@
 				E822D9271FC2078600E01E06 /* Resources */,
 				15B84049F8B0550334D2395E /* [CP] Embed Pods Frameworks */,
 				336EA0D16E4542C03DCE91EE /* [CP] Copy Pods Resources */,
+				E8B521ED1FCE485B00131AEE /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E8B521E41FCE485B00131AEE /* PBXTargetDependency */,
 			);
 			name = TTCheck;
 			productName = TTCheck;
@@ -334,6 +425,40 @@
 			productReference = E822D94B1FC2078700E01E06 /* TTCheckUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		E8B521C71FCE485B00131AEE /* TTCheck-wachOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8B521EA1FCE485B00131AEE /* Build configuration list for PBXNativeTarget "TTCheck-wachOS" */;
+			buildPhases = (
+				E8B521C61FCE485B00131AEE /* Resources */,
+				E8B521E91FCE485B00131AEE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8B521D71FCE485B00131AEE /* PBXTargetDependency */,
+			);
+			name = "TTCheck-wachOS";
+			productName = "TTCheck-wachOS";
+			productReference = E8B521C81FCE485B00131AEE /* TTCheck-wachOS.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		E8B521D31FCE485B00131AEE /* TTCheck-wachOS Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8B521E61FCE485B00131AEE /* Build configuration list for PBXNativeTarget "TTCheck-wachOS Extension" */;
+			buildPhases = (
+				E8B521D01FCE485B00131AEE /* Sources */,
+				E8B521D11FCE485B00131AEE /* Frameworks */,
+				E8B521D21FCE485B00131AEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TTCheck-wachOS Extension";
+			productName = "TTCheck-wachOS Extension";
+			productReference = E8B521D41FCE485B00131AEE /* TTCheck-wachOS Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -358,6 +483,14 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = E822D9281FC2078600E01E06;
 					};
+					E8B521C71FCE485B00131AEE = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					E8B521D31FCE485B00131AEE = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = E822D9241FC2078600E01E06 /* Build configuration list for PBXProject "TTCheck" */;
@@ -376,6 +509,8 @@
 				E822D9281FC2078600E01E06 /* TTCheck */,
 				E822D93F1FC2078700E01E06 /* TTCheckTests */,
 				E822D94A1FC2078700E01E06 /* TTCheckUITests */,
+				E8B521C71FCE485B00131AEE /* TTCheck-wachOS */,
+				E8B521D31FCE485B00131AEE /* TTCheck-wachOS Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -385,7 +520,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E86AB9771FCB5F9B0085F692 /* lottie.json in Resources */,
 				E86AB96F1FCB4EA10085F692 /* Launch Screen.storyboard in Resources */,
 				E822D9371FC2078600E01E06 /* Assets.xcassets in Resources */,
 				E822D9321FC2078600E01E06 /* Main.storyboard in Resources */,
@@ -404,6 +538,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B521C61FCE485B00131AEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8B521CE1FCE485B00131AEE /* Assets.xcassets in Resources */,
+				E8B521CC1FCE485B00131AEE /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B521D21FCE485B00131AEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8B521E01FCE485B00131AEE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +758,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8B521D01FCE485B00131AEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8B521DE1FCE485B00131AEE /* NotificationController.swift in Sources */,
+				E8B521DC1FCE485B00131AEE /* ExtensionDelegate.swift in Sources */,
+				E8B521DA1FCE485B00131AEE /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -620,6 +781,16 @@
 			target = E822D9281FC2078600E01E06 /* TTCheck */;
 			targetProxy = E822D94C1FC2078700E01E06 /* PBXContainerItemProxy */;
 		};
+		E8B521D71FCE485B00131AEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8B521D31FCE485B00131AEE /* TTCheck-wachOS Extension */;
+			targetProxy = E8B521D61FCE485B00131AEE /* PBXContainerItemProxy */;
+		};
+		E8B521E41FCE485B00131AEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8B521C71FCE485B00131AEE /* TTCheck-wachOS */;
+			targetProxy = E8B521E31FCE485B00131AEE /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -629,6 +800,14 @@
 				E822D9311FC2078600E01E06 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E8B521CA1FCE485B00131AEE /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8B521CB1FCE485B00131AEE /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -853,6 +1032,80 @@
 			};
 			name = Release;
 		};
+		E8B521E71FCE485B00131AEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DMM723BKP;
+				INFOPLIST_FILE = "TTCheck-wachOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = juanpabloghelfi.TTCheck.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		E8B521E81FCE485B00131AEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DMM723BKP;
+				INFOPLIST_FILE = "TTCheck-wachOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = juanpabloghelfi.TTCheck.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		E8B521EB1FCE485B00131AEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DMM723BKP;
+				IBSC_MODULE = TTCheck_wachOS_Extension;
+				INFOPLIST_FILE = "TTCheck-wachOS/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = juanpabloghelfi.TTCheck.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		E8B521EC1FCE485B00131AEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DMM723BKP;
+				IBSC_MODULE = TTCheck_wachOS_Extension;
+				INFOPLIST_FILE = "TTCheck-wachOS/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = juanpabloghelfi.TTCheck.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -888,6 +1141,24 @@
 			buildConfigurations = (
 				E822D95B1FC2078700E01E06 /* Debug */,
 				E822D95C1FC2078700E01E06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8B521E61FCE485B00131AEE /* Build configuration list for PBXNativeTarget "TTCheck-wachOS Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8B521E71FCE485B00131AEE /* Debug */,
+				E8B521E81FCE485B00131AEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8B521EA1FCE485B00131AEE /* Build configuration list for PBXNativeTarget "TTCheck-wachOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8B521EB1FCE485B00131AEE /* Debug */,
+				E8B521EC1FCE485B00131AEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

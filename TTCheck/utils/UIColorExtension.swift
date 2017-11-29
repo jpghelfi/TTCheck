@@ -13,6 +13,7 @@ extension UIColor {
 
     class func getLightGrayColor() -> UIColor {
         return UIColor(red: 0.3059, green: 0.3059, blue: 0.3059, alpha: 1)
+        
     }
     
     class func getDarkGrayColor() -> UIColor {
@@ -20,7 +21,7 @@ extension UIColor {
     }
     
     class func getRedColor() -> UIColor {
-        return UIColor(red: 0.784, green: 0.243, blue: 0.415, alpha: 1)
+        return UIColor(red: 197/255, green: 61/255, blue: 106/255, alpha: 1)
     }
     
     
