@@ -19,8 +19,8 @@
                                 <tableRow identifier="tableCell" id="Q1C-aQ-KFu" customClass="TableCell" customModule="TTCheck_wachOS_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="h6l-Ky-mGc">
                                         <items>
-                                            <label alignment="left" text="Name" minimumScaleFactor="0.90000000000000002" id="gcg-fc-rRw"/>
-                                            <label alignment="left" text="Bool" id="pXy-wR-kuL"/>
+                                            <label width="91" alignment="left" text="Name" numberOfLines="0" minimumScaleFactor="0.90000000000000002" id="gcg-fc-rRw"/>
+                                            <label alignment="left" text="Fail" id="pXy-wR-kuL"/>
                                         </items>
                                     </group>
                                     <connections>

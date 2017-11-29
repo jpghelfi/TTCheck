@@ -53,7 +53,10 @@ class InterfaceController: WKInterfaceController {
                 row.labelCell.setText("\(title):")
                 row.statusCell.setText("\(status)")
             }
+//            row.labelCell.size
         }
+        
+        
     }
     
     //    override func didDeactivate() {
