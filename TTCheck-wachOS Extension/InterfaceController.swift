@@ -30,11 +30,13 @@ class InterfaceController: WKInterfaceController {
         apiServicew.getApiStatus { (response) in
             self.apiCheckArray.removeAll()
             self.apiCheckArray.append(contentsOf: response)
+            self.setupTable()
         }
         
 //        table.setHidden(true)
-        self.setupTable()
     }
+    
+    
     
     override func willActivate() {
         super.willActivate()
