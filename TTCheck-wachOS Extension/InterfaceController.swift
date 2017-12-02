@@ -26,12 +26,6 @@ class InterfaceController: WKInterfaceController {
         apiCheckArray = [ApiDTOw]()
         
         self.apiServicew = ApiServicew()
-       
-        apiServicew.getApiStatus { (response) in
-            self.apiCheckArray.removeAll()
-            self.apiCheckArray.append(contentsOf: response)
-        }
-        
 //        table.setHidden(true)
         self.setupTable()
     }
@@ -43,6 +37,11 @@ class InterfaceController: WKInterfaceController {
         
     }
     func setupTable() {
+        
+        apiServicew.getApiStatus { (response) in
+            self.apiCheckArray.removeAll()
+            self.apiCheckArray.append(contentsOf: response)
+        }
         
         table.setNumberOfRows(self.apiCheckArray.count, withRowType: "tableCell")
         for i in 0 ..< self.apiCheckArray.count {
