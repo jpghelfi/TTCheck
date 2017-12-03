@@ -26,7 +26,7 @@ class InterfaceController: WKInterfaceController {
         apiCheckArray = [ApiDTOw]()
         
         self.apiServicew = ApiServicew()
-//        table.setHidden(true)
+        table.setHidden(false)
         self.setupTable()
     }
     
@@ -41,25 +41,25 @@ class InterfaceController: WKInterfaceController {
         apiServicew.getApiStatus { (response) in
             self.apiCheckArray.removeAll()
             self.apiCheckArray.append(contentsOf: response)
-        }
-        
-        table.setNumberOfRows(self.apiCheckArray.count, withRowType: "tableCell")
-        for i in 0 ..< self.apiCheckArray.count {
-            let row = table.rowController(at: i) as! TableCell
-            if let title = self.apiCheckArray[i].apiName,
-                let status = self.apiCheckArray[i].apiStatus?.statusText{
-                
-                
-                row.labelCell.setText("\(title):")
-                row.statusCell.setText("\(status)")
+            self.table.setNumberOfRows(self.apiCheckArray.count, withRowType: "tableCell")
+            for i in 0 ..< self.apiCheckArray.count {
+                let row = self.table.rowController(at: i) as! TableCell
+                if let title = self.apiCheckArray[i].apiName,
+                    let status = self.apiCheckArray[i].apiStatus?.statusText{
+                    
+                    
+                    row.labelCell.setText("\(title):")
+                    row.statusCell.setText("\(status)")
+                }
             }
         }
+        
     }
     
-    //    override func didDeactivate() {
-    //        // This method is called when watch view controller is no longer visible
-    //        super.didDeactivate()
-    //    }
+    override func didDeactivate() {
+        // This method is called when watch view controller is no longer visible
+        super.didDeactivate()
+    }
     
 }
 
