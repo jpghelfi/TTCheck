@@ -49,6 +49,7 @@ class InterfaceController: WKInterfaceController {
             if let title = self.apiCheckArray[i].apiName,
                 let status = self.apiCheckArray[i].apiStatus?.statusText{
                 
+                
                 row.labelCell.setText("\(title):")
                 row.statusCell.setText("\(status)")
             }
