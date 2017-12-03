@@ -24,7 +24,7 @@ protocol DidSaveMonitor {
     func didSaverMonitor() -> NewMonitorDTO
 }
 
-class AddMonitorViewController: UIViewController, UITextInputTraits {
+class AddMonitorViewController: UIViewController, UITextFieldDelegate {
 
     
     var closeButton: UIButton!
@@ -86,7 +86,9 @@ class AddMonitorViewController: UIViewController, UITextInputTraits {
         self.monitorNameTextField.layer.cornerRadius = 5
         self.monitorNameTextField.textAlignment = .left
         self.monitorNameTextField.layer.sublayerTransform = CATransform3DMakeTranslation(10, 0, 0)
-
+        self.monitorNameTextField.delegate = self
+        self.monitorNameTextField.tag = 0
+        self.monitorNameTextField.returnKeyType = UIReturnKeyType.next
         self.nameContainerView.addSubview(self.monitorNameTextField)
         
         self.urlContainerView = UIView()
@@ -107,6 +109,9 @@ class AddMonitorViewController: UIViewController, UITextInputTraits {
         self.monitorURLTextField.font = UIFont.systemFont(ofSize: 20)
         self.monitorURLTextField.layer.cornerRadius = 5
         self.monitorURLTextField.layer.sublayerTransform = CATransform3DMakeTranslation(10, 0, 0)
+        self.monitorURLTextField.delegate = self
+        self.monitorURLTextField.tag = 1
+        self.monitorURLTextField.returnKeyType = .send
         self.urlContainerView.addSubview(self.monitorURLTextField)
         
         self.closeButton = UIButton()
@@ -131,7 +136,7 @@ class AddMonitorViewController: UIViewController, UITextInputTraits {
     }
     
     
-    @objc private func didTouchButton(sender: UIButton){
+    @objc private func didTouchButton(sender: UIButton?){
         
         let newMonitorService = MonitorService()
         newMonitorService.createNewMonitorWith(name: self.monitorNameTextField.text!, url: self.monitorURLTextField.text!) { (NewMonitorStatusDTO) in
@@ -162,6 +167,22 @@ class AddMonitorViewController: UIViewController, UITextInputTraits {
     
     private func fillViews(){
         
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    
+
+        
+        if textField == self.monitorNameTextField {
+            
+            self.monitorURLTextField.becomeFirstResponder()
+        } else {
+            
+            self.monitorURLTextField.resignFirstResponder()
+            self.didTouchButton(sender: nil)
+           
+        }
+        return true
     }
     
     private func setupConstraints(){
