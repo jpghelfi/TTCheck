@@ -48,7 +48,7 @@ class HomeTableViewController: UITableViewController {
         }
         self.refreshController.addTarget(self, action: #selector(update), for: .valueChanged)
         self.refreshController.tintColor = .black
-        self.refreshController.attributedTitle = NSAttributedString(string: "loading...")
+//        self.refreshController.attributedTitle = NSAttributedString(string: "loading...")
     }
     
     fileprivate func setupTableView() {
@@ -86,7 +86,11 @@ class HomeTableViewController: UITableViewController {
     
     @objc private func update(){
         self.loadData()
-        self.refreshController.endRefreshing()
+        let when = DispatchTime.now() + 0.5 // change to desired number of seconds
+        DispatchQueue.main.asyncAfter(deadline: when) {
+    
+            self.refreshController.endRefreshing()
+        }
     }
     
     // MARK: - Table view data source
