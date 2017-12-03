@@ -40,7 +40,6 @@
 		E8B521DE1FCE485B00131AEE /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B521DD1FCE485B00131AEE /* NotificationController.swift */; };
 		E8B521E01FCE485B00131AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8B521DF1FCE485B00131AEE /* Assets.xcassets */; };
 		E8B521E51FCE485B00131AEE /* TTCheck-wachOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E8B521C81FCE485B00131AEE /* TTCheck-wachOS.app */; };
-		E8B521F31FCE4CDC00131AEE /* ApiDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B521F21FCE4CDC00131AEE /* ApiDTO.swift */; };
 		E8B521F71FCE4D0C00131AEE /* ApiServicew.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B521F61FCE4D0C00131AEE /* ApiServicew.swift */; };
 		E8B521FA1FCE4D4D00131AEE /* ApiDAOw.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B521F91FCE4D4D00131AEE /* ApiDAOw.swift */; };
 		E8B521FC1FCE4D5B00131AEE /* ApiDTOw.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B521FB1FCE4D5B00131AEE /* ApiDTOw.swift */; };
@@ -158,7 +157,6 @@
 		E8B521DF1FCE485B00131AEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8B521E11FCE485B00131AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8B521E21FCE485B00131AEE /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		E8B521F21FCE4CDC00131AEE /* ApiDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDTO.swift; sourceTree = "<group>"; };
 		E8B521F61FCE4D0C00131AEE /* ApiServicew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServicew.swift; sourceTree = "<group>"; };
 		E8B521F91FCE4D4D00131AEE /* ApiDAOw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDAOw.swift; sourceTree = "<group>"; };
 		E8B521FB1FCE4D5B00131AEE /* ApiDTOw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDTOw.swift; sourceTree = "<group>"; };
@@ -380,7 +378,6 @@
 				E8B521DF1FCE485B00131AEE /* Assets.xcassets */,
 				E8B521E11FCE485B00131AEE /* Info.plist */,
 				E8B521E21FCE485B00131AEE /* PushNotificationPayload.apns */,
-				E8B521F21FCE4CDC00131AEE /* ApiDTO.swift */,
 			);
 			path = "TTCheck-wachOS Extension";
 			sourceTree = "<group>";
@@ -883,7 +880,6 @@
 				E8B522021FCE4F4B00131AEE /* MonitorStatusDTOw.swift in Sources */,
 				E8B521FC1FCE4D5B00131AEE /* ApiDTOw.swift in Sources */,
 				E8B521FE1FCE4DB800131AEE /* TTGenericDTOw.swift in Sources */,
-				E8B521F31FCE4CDC00131AEE /* ApiDTO.swift in Sources */,
 				E8B521DE1FCE485B00131AEE /* NotificationController.swift in Sources */,
 				E8B521DC1FCE485B00131AEE /* ExtensionDelegate.swift in Sources */,
 				E8B521DA1FCE485B00131AEE /* InterfaceController.swift in Sources */,
