@@ -178,7 +178,8 @@ class HomeTableViewController: UITableViewController {
 //    }
     
     override func viewWillAppear(_ animated: Bool) {
-        setupRefreshControl()
+        self.setupRefreshControl()
+        self.update()
     }
     
 }

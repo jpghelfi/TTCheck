@@ -24,7 +24,7 @@ protocol DidSaveMonitor {
     func didSaverMonitor() -> NewMonitorDTO
 }
 
-class AddMonitorViewController: UIViewController {
+class AddMonitorViewController: UIViewController, UITextInputTraits {
 
     
     var closeButton: UIButton!
@@ -84,6 +84,9 @@ class AddMonitorViewController: UIViewController {
         self.monitorNameTextField.backgroundColor = .white
         self.monitorNameTextField.font = UIFont.systemFont(ofSize: 20)
         self.monitorNameTextField.layer.cornerRadius = 5
+        self.monitorNameTextField.textAlignment = .left
+        self.monitorNameTextField.layer.sublayerTransform = CATransform3DMakeTranslation(10, 0, 0)
+
         self.nameContainerView.addSubview(self.monitorNameTextField)
         
         self.urlContainerView = UIView()
@@ -98,17 +101,12 @@ class AddMonitorViewController: UIViewController {
         self.urlContainerView.addSubview(self.monitorURLLabel)
         
         self.monitorURLTextField = UITextField()
-//        let label = UILabel()
-//        label.textColor = .black
-//        label.font = UIFont.boldSystemFont(ofSize: 20)
-//        label.text = "http://"
-//        self.monitorURLTextField.rightViewMode = .always
-//        self.monitorURLTextField.rightView = label
         self.monitorURLTextField.text = "http://"
         self.monitorURLTextField.textColor = .black
         self.monitorURLTextField.backgroundColor = .white
         self.monitorURLTextField.font = UIFont.systemFont(ofSize: 20)
         self.monitorURLTextField.layer.cornerRadius = 5
+        self.monitorURLTextField.layer.sublayerTransform = CATransform3DMakeTranslation(10, 0, 0)
         self.urlContainerView.addSubview(self.monitorURLTextField)
         
         self.closeButton = UIButton()
@@ -173,7 +171,7 @@ class AddMonitorViewController: UIViewController {
         self.closeButton.autoSetDimensions(to: CGSize(width: 36, height: 36))
         
         self.nameContainerView.autoPinEdge(.top, to: .top, of: self.view, withOffset: 84)
-        self.nameContainerView.autoSetDimension(.height, toSize: 100)
+        self.nameContainerView.autoSetDimension(.height, toSize: 150)
         self.nameContainerView.autoPinEdge(.left, to: .left, of: self.view, withOffset: 20)
         self.nameContainerView.autoPinEdge(.right, to: .right, of: self.view, withOffset: -20)
         
@@ -186,7 +184,7 @@ class AddMonitorViewController: UIViewController {
         self.monitorNameLabel.autoPinEdge(.left, to: .left, of: self.nameContainerView, withOffset: 10)
         
         self.monitorNameTextField.autoPinEdge(.top, to: .bottom, of: self.monitorNameLabel, withOffset: 15)
-        self.monitorNameTextField.autoMatch(.height, to: .height, of: self.monitorNameLabel)
+        self.monitorNameTextField.autoSetDimension(.height, toSize: 40)
         self.monitorNameTextField.autoPinEdge(.left, to: .left, of: self.nameContainerView, withOffset: 10)
         self.monitorNameTextField.autoMatch(.width, to: .width, of: self.nameContainerView, withOffset: -20)
         
@@ -195,7 +193,7 @@ class AddMonitorViewController: UIViewController {
         
         self.monitorURLTextField.autoPinEdge(.top, to: .bottom, of: self.monitorURLLabel, withOffset: 15)
         self.monitorURLTextField.autoPinEdge(.left, to: .left, of: self.urlContainerView, withOffset: 10)
-        self.monitorURLTextField.autoMatch(.height, to: .height, of: self.monitorURLLabel)
+        self.monitorURLTextField.autoMatch(.height, to: .height, of: self.monitorNameTextField)
         self.monitorURLTextField.autoMatch(.width, to: .width, of: self.urlContainerView, withOffset: -20)
         
         self.saveButton.autoPinEdge(.top, to: .bottom, of: self.urlContainerView, withOffset: 15)
@@ -205,15 +203,6 @@ class AddMonitorViewController: UIViewController {
     
     }
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     

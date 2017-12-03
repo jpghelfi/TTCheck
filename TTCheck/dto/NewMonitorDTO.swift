@@ -21,13 +21,10 @@ import TTMVC
 //http_username - optional
 //http_password - optional
 
-
 class NewMonitorDTO: TTGenericDTO {
     
     var friendly_name: String?
     var url: String?
     var type: NSNumber?
-    
-    
-    
+ 
 }
