@@ -45,28 +45,30 @@ class InterfaceController: WKInterfaceController {
             for i in 0 ..< self.apiCheckArray.count {
                 let row = self.table.rowController(at: i) as! TableCell
                 if let title = self.apiCheckArray[i].apiName,
-                    let status = self.apiCheckArray[i].apiStatus?.statusText{
+                    let status = self.apiCheckArray[i].apiStatus?.statusText,
+                    let color = self.apiCheckArray[i].getBackgorundColor(){
                     
+//                    var color1 = UIColor.blue
+                    row.statusButton.setBackgroundColor(color)
                     
                     row.labelCell.setText("\(title):")
-                    row.statusCell.setText("\(status)")
+//                    row.statusCell.setText("\(status)")
                 }
             }
         }
-        
-    }
+}
     
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
-    
 }
 
 class TableCell: NSObject {
     
     @IBOutlet var labelCell: WKInterfaceLabel!
     
-    @IBOutlet var statusCell: WKInterfaceLabel!
+    @IBOutlet var statusButton: WKInterfaceButton!
+
 }
 

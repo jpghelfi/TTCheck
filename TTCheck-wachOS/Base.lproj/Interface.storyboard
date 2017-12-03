@@ -19,13 +19,13 @@
                                 <tableRow identifier="tableCell" id="Q1C-aQ-KFu" customClass="TableCell" customModule="TTCheck_wachOS_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="h6l-Ky-mGc">
                                         <items>
-                                            <label alignment="left" text="Name" minimumScaleFactor="0.90000000000000002" id="gcg-fc-rRw"/>
-                                            <label alignment="left" text="Bool" id="pXy-wR-kuL"/>
+                                            <label width="100" height="30" alignment="left" text="Name" minimumScaleFactor="0.90000000000000002" id="gcg-fc-rRw"/>
+                                            <button width="20" height="20" alignment="center" verticalAlignment="center" enabled="NO" id="L2y-qy-JCk"/>
                                         </items>
                                     </group>
                                     <connections>
                                         <outlet property="labelCell" destination="gcg-fc-rRw" id="xfH-P8-UYS"/>
-                                        <outlet property="statusCell" destination="pXy-wR-kuL" id="Zd7-4a-Ac2"/>
+                                        <outlet property="statusButton" destination="L2y-qy-JCk" id="LoJ-GI-RRn"/>
                                     </connections>
                                 </tableRow>
                             </items>
