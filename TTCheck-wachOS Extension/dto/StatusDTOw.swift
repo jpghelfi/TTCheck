@@ -11,7 +11,7 @@ import UIKit
 
 class StatusDTOw: TTGenericDTO {
     
-    private var isLive: Bool?
+    var isLive: Bool?
     var statusText: String?
     var color: UIColor?
     

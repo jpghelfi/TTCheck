@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 import Alamofire
 
 
@@ -36,4 +37,22 @@ class ApiDAOw: TTGenericDAO {
             }
         }
     }
+    
+    func getApisError( completion: @escaping (UIColor) -> Void) {
+        
+        var status: UIColor = .green
+        self.getApiStatus { (apiDTO) in
+            
+            for api in apiDTO{
+                if api.apiStatus?.isLive == false{
+                    status = .red
+                }
+            }
+            completion(status)
+        }
+    }
 }
+
+
+
+

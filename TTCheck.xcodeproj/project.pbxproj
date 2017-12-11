@@ -11,6 +11,7 @@
 		953308BCF3871DE19C1FECC0 /* Pods_TTCheckTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17FD70F9D137289DB80196C /* Pods_TTCheckTests.framework */; };
 		A3010F658690F07B23444F5A /* Pods_TTCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05722EB2448A0C08F1F5AA45 /* Pods_TTCheck.framework */; };
 		E816AFBC1FC37ACF00F23B93 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E816AFBB1FC37ACF00F23B93 /* ApiService.swift */; };
+		E81713551FDDB105002950C3 /* complicationManifest.json in Resources */ = {isa = PBXBuildFile; fileRef = E81713541FDDB105002950C3 /* complicationManifest.json */; };
 		E81CDE451FC354F400EF2590 /* ApiDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81CDE441FC354F400EF2590 /* ApiDAO.swift */; };
 		E822D92D1FC2078600E01E06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E822D92C1FC2078600E01E06 /* AppDelegate.swift */; };
 		E822D9321FC2078600E01E06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E822D9301FC2078600E01E06 /* Main.storyboard */; };
@@ -120,6 +121,7 @@
 		E0528CD373E5CAC855FD3651 /* Pods-TTCheck-wachOS Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTCheck-wachOS Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTCheck-wachOS Extension/Pods-TTCheck-wachOS Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		E17FD70F9D137289DB80196C /* Pods_TTCheckTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTCheckTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E816AFBB1FC37ACF00F23B93 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		E81713541FDDB105002950C3 /* complicationManifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = complicationManifest.json; sourceTree = "<group>"; };
 		E81CDE441FC354F400EF2590 /* ApiDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDAO.swift; sourceTree = "<group>"; };
 		E822D9291FC2078600E01E06 /* TTCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E822D92C1FC2078600E01E06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 				E822D9631FC20B7900E01E06 /* service */,
 				E822D9641FC20B8000E01E06 /* view */,
 				E822D92C1FC2078600E01E06 /* AppDelegate.swift */,
+				E81713541FDDB105002950C3 /* complicationManifest.json */,
 				E86AB96E1FCB4EA10085F692 /* Launch Screen.storyboard */,
 				E822D9301FC2078600E01E06 /* Main.storyboard */,
 				E822D9361FC2078600E01E06 /* Assets.xcassets */,
@@ -585,6 +588,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E86AB96F1FCB4EA10085F692 /* Launch Screen.storyboard in Resources */,
+				E81713551FDDB105002950C3 /* complicationManifest.json in Resources */,
 				E822D9371FC2078600E01E06 /* Assets.xcassets in Resources */,
 				E822D9321FC2078600E01E06 /* Main.storyboard in Resources */,
 				E86AB9731FCB5F040085F692 /* done.json in Resources */,
