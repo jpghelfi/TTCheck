@@ -20,12 +20,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTCheck/view/table/HomeTableViewController.swift"
-            timestampString = "533145778.868191"
+            timestampString = "534718732.920096"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "90"
             endingLineNumber = "90"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkName = "update()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -36,39 +36,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTCheck/view/table/HomeTableViewController.swift"
-            timestampString = "533145778.869379"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TTCheck/view/table/HomeTableViewController.swift"
-            timestampString = "533145778.870206"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "loadData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TTCheck/view/table/HomeTableViewController.swift"
-            timestampString = "533145778.8707"
+            timestampString = "534718732.920578"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
@@ -84,12 +52,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTCheck/view/table/HomeTableViewController.swift"
-            timestampString = "533145778.871284"
+            timestampString = "534718732.921066"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "74"
             endingLineNumber = "74"
-            landmarkName = "update()"
+            landmarkName = "setupNavigation()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -99,46 +67,62 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TTCheck/view/table/HomeTableViewController.swift"
-            timestampString = "533145778.872001"
+            filePath = "TTCheck-wachOS Extension/ComplicationController.swift"
+            timestampString = "534719463.783972"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "loadData()"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "getLocalizableSampleTemplate(for:withHandler:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TTCheck.HomeTableViewController.(loadData in _C98FB141569703F51B4F390560F25627)() -&gt; ()"
-                  moduleName = "TTCheck"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/juanpabloghelfi/TTCheck/TTCheck/view/table/HomeTableViewController.swift"
-                  timestampString = "533145779.127157"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "44">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Array&lt;TTCheck.ApiDTO&gt;) -&gt; () in TTCheck.HomeTableViewController.(loadData in _C98FB141569703F51B4F390560F25627)() -&gt; ()"
-                  moduleName = "TTCheck"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/juanpabloghelfi/TTCheck/TTCheck/view/table/HomeTableViewController.swift"
-                  timestampString = "533145779.129617"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "24">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTCheck-wachOS Extension/ComplicationController.swift"
+            timestampString = "534719463.784678"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "getCurrentTimelineEntry(for:withHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTCheck-wachOS Extension/Complication.swift"
+            timestampString = "534718875.792286"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "getLocalizableSampleTemplate(for:withHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TTCheck-wachOS Extension/ComplicationController.swift"
+            timestampString = "534719463.785157"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "getSupportedTimeTravelDirections(for:withHandler:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

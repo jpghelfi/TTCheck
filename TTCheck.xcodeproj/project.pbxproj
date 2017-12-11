@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		55F3CBE1173717A6B13AC6DE /* Pods_TTCheckUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FC1EB5BF5B68C185B29A49E /* Pods_TTCheckUITests.framework */; };
+		8D3582BB1FDF2A3500193D2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8B521CD1FCE485B00131AEE /* Assets.xcassets */; };
 		953308BCF3871DE19C1FECC0 /* Pods_TTCheckTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17FD70F9D137289DB80196C /* Pods_TTCheckTests.framework */; };
 		A3010F658690F07B23444F5A /* Pods_TTCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05722EB2448A0C08F1F5AA45 /* Pods_TTCheck.framework */; };
 		E816AFBC1FC37ACF00F23B93 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E816AFBB1FC37ACF00F23B93 /* ApiService.swift */; };
@@ -622,6 +623,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D3582BB1FDF2A3500193D2E /* Assets.xcassets in Resources */,
 				E8B521E01FCE485B00131AEE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
