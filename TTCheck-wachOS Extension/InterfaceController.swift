@@ -9,12 +9,19 @@
 import WatchKit
 import Foundation
 
-class InterfaceController: WKInterfaceController {
-    
-    
+protocol InterfaceControllerDelegate{
+    func isRed() -> Void
+}
+
+class InterfaceController: WKInterfaceController{
+  
     @IBOutlet var table: WKInterfaceTable!
     
     var apiServicew: ApiServicew!
+    
+    var isAnyoneRed: Bool = false
+    
+    var delegate: InterfaceControllerDelegate?
     
     var apiCheckArray: [ApiDTOw]!
     
@@ -27,6 +34,7 @@ class InterfaceController: WKInterfaceController {
         
         self.apiServicew = ApiServicew()
         table.setHidden(false)
+        
         self.setupTable()
     }
     
@@ -38,6 +46,7 @@ class InterfaceController: WKInterfaceController {
     }
     func setupTable() {
         
+        
         apiServicew.getApiStatus { (response) in
             self.apiCheckArray.removeAll()
             self.apiCheckArray.append(contentsOf: response)
@@ -48,15 +57,21 @@ class InterfaceController: WKInterfaceController {
                     let status = self.apiCheckArray[i].apiStatus?.statusText,
                     let color = self.apiCheckArray[i].getBackgorundColor(){
                     
-//                    var color1 = UIColor.blue
+                    if color == UIColor.red{
+                        self.isAnyoneRed = true
+                        self.delegate?.isRed()
+                        Status.shared.status = "ERROR"
+                    }else{
+                        Status.shared.status = "OK"
+                    }
                     row.statusButton.setBackgroundColor(color)
-                    
                     row.labelCell.setText("\(title):")
-//                    row.statusCell.setText("\(status)")
                 }
             }
         }
-}
+    }
+    
+
     
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
@@ -72,3 +87,10 @@ class TableCell: NSObject {
 
 }
 
+final class Status {
+    
+    static let shared = Status()
+    
+    var status: String?
+    
+}

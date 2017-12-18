@@ -68,7 +68,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTCheck/view/AddMonitorViewController.swift"
-            timestampString = "534033337.874487"
+            timestampString = "535147148.117279"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "172"
@@ -84,11 +84,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTCheck-wachOS Extension/ComplicationController.swift"
-            timestampString = "534624215.839175"
+            timestampString = "535241986.693315"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "getLocalizableSampleTemplate(for:withHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -100,140 +100,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TTCheck-wachOS Extension/ComplicationController.swift"
-            timestampString = "534624215.839241"
+            timestampString = "535241986.693863"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "getLocalizableSampleTemplate(for:withHandler:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TTCheck-wachOS Extension/ComplicationController.swift"
-            timestampString = "534624215.83929"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "getCurrentTimelineEntry(for:withHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TTCheck-wachOS Extension/ComplicationController.swift"
-            timestampString = "534624215.839333"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "getTimelineEntries(for:before:limit:withHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TTCheck-wachOS Extension/ComplicationController.swift"
-            timestampString = "534624215.839376"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "getTimelineEntries(for:after:limit:withHandler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TTCheck-wachOS Extension/ComplicationController.swift"
-            timestampString = "534624215.839418"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
-            landmarkName = "ComplicationController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TTCheck_wachOS_Extension.ComplicationController.__deallocating_deinit"
-                  moduleName = "TTCheck-wachOS Extension"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jp/git/TTCheck/TTCheck-wachOS%20Extension/ComplicationController.swift"
-                  timestampString = "534624215.941336"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TTCheck_wachOS_Extension.ComplicationController.__allocating_init() -&gt; TTCheck_wachOS_Extension.ComplicationController"
-                  moduleName = "TTCheck-wachOS Extension"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jp/git/TTCheck/TTCheck-wachOS%20Extension/ComplicationController.swift"
-                  timestampString = "534624215.943003"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "3">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TTCheck_wachOS_Extension.ComplicationController.init() -&gt; TTCheck_wachOS_Extension.ComplicationController"
-                  moduleName = "TTCheck-wachOS Extension"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jp/git/TTCheck/TTCheck-wachOS%20Extension/ComplicationController.swift"
-                  timestampString = "534624215.944607"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "66">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TTCheck-wachOS Extension/ComplicationController.swift"
-            timestampString = "534624215.839457"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "ComplicationController"
-            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
