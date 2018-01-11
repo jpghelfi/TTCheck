@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Flurry_iOS_SDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +21,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let splashViewContoller = SplashViewController()
         self.window?.rootViewController = splashViewContoller
         UIApplication.shared.statusBarStyle = .lightContent
+
+//        Flurry.startSession("M9K666BQ7FT7NFW5MMMM", with: FlurrySessionBuilder
+//            .init()
+//            .withCrashReporting(true)
+//            .withLogLevel(FlurryLogLevelAll))
+        
+        let builder = FlurrySessionBuilder.init()
+            .withAppVersion("1.0")
+            .withLogLevel(FlurryLogLevelAll)
+            .withCrashReporting(true)
+            .withSessionContinueSeconds(10)
+        
+        // Replace YOUR_API_KEY with the api key in the downloaded package
+        Flurry.startSession("M9K666BQ7FT7NFW5MMMM", with: builder)
         
         return true
     }

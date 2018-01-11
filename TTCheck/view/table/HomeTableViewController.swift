@@ -9,6 +9,7 @@
 import UIKit
 import PureLayout
 import SwipeCellKit
+import Flurry_iOS_SDK
 
 class HomeTableViewController: UITableViewController {
 
@@ -37,6 +38,8 @@ class HomeTableViewController: UITableViewController {
         self.setupRefreshControl()
 
         self.setupTableView()
+        
+        Flurry.logEvent("home")
         
     }
     

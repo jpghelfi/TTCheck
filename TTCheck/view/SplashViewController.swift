@@ -8,6 +8,7 @@
 
 import UIKit
 import Lottie
+import Flurry_iOS_SDK
 
 class SplashViewController: UIViewController {
 
@@ -38,6 +39,8 @@ class SplashViewController: UIViewController {
         self.setupConstraints()
         
         self.showLottie()
+        
+        Flurry.logEvent("splash");
     }
     
     private func showLottie(){

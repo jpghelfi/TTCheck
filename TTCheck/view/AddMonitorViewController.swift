@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Flurry_iOS_SDK
 
 //api_key - required
 //friendly_name - required
@@ -60,6 +61,8 @@ class AddMonitorViewController: UIViewController, UITextFieldDelegate {
         self.fillViews()
         
         self.setupConstraints()
+        
+        Flurry.logEvent("addMonitor")
 
     }
     
