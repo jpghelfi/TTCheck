@@ -10,6 +10,8 @@ target 'TTCheck' do
   pod 'TTMVC'
   pod 'SwipeCellKit'
   pod 'lottie-ios'
+  pod 'Flurry-iOS-SDK/FlurrySDK' #Analytics Pod
+  pod 'Flurry-iOS-SDK/FlurryAds' #Advertising Pod (requires Analytics)
   
   # Pods for TTCheck
 
