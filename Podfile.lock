@@ -1,9 +1,43 @@
 PODS:
   - Alamofire (4.5.1)
+  - Firebase (4.11.0):
+    - Firebase/Core (= 4.11.0)
+  - Firebase/Core (4.11.0):
+    - FirebaseAnalytics (= 4.1.0)
+    - FirebaseCore (= 4.0.18)
+  - Firebase/Messaging (4.11.0):
+    - Firebase/Core
+    - FirebaseMessaging (= 2.1.1)
+  - FirebaseAnalytics (4.1.0):
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - nanopb (~> 0.3)
+  - FirebaseCore (4.0.18):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseInstanceID (2.0.10):
+    - FirebaseCore (~> 4.0)
+  - FirebaseMessaging (2.1.1):
+    - FirebaseAnalytics (~> 4.1)
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - Protobuf (~> 3.5)
   - Flurry-iOS-SDK/FlurryAds (8.3.1):
     - Flurry-iOS-SDK/FlurrySDK
   - Flurry-iOS-SDK/FlurrySDK (8.3.1)
+  - GoogleToolboxForMac/Defines (2.1.3)
+  - GoogleToolboxForMac/Logger (2.1.3):
+    - GoogleToolboxForMac/Defines (= 2.1.3)
+  - GoogleToolboxForMac/NSData+zlib (2.1.3):
+    - GoogleToolboxForMac/Defines (= 2.1.3)
   - lottie-ios (2.1.4)
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
+  - Protobuf (3.5.0)
   - PureLayout (3.0.2)
   - SwipeCellKit (2.0.0)
   - TTMVC (0.4.0):
@@ -11,6 +45,9 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - Firebase
+  - Firebase/Core
+  - Firebase/Messaging
   - Flurry-iOS-SDK/FlurryAds
   - Flurry-iOS-SDK/FlurrySDK
   - lottie-ios
@@ -20,12 +57,20 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  Firebase: cc13dfab1038c8b45d7903e01fc690451d6d0b24
+  FirebaseAnalytics: 3dfae28d4a5e06f86c4fae830efc2ad3fadb19bc
+  FirebaseCore: b981f47e5254cbcfdeb483355300d743f6fcab2c
+  FirebaseInstanceID: 8d20d890d65c917f9f7d9950b6e10a760ad34321
+  FirebaseMessaging: db0e01c52ef7e1f42846431273558107d084ede4
   Flurry-iOS-SDK: 912b3eb78bee559883feb3b13263437b185e8fe9
+  GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   lottie-ios: 94fa2d82547ce3adf1e61157653ba99999fd279f
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   SwipeCellKit: 349c61ffde96ac3ae51c2691a03e421b5b29ee98
   TTMVC: 98ba387598570679b93f2e95b4be07abe0790426
 
-PODFILE CHECKSUM: 307ef3b36ee93c5bcc9622ea8547cdee8eb2f977
+PODFILE CHECKSUM: 3d21d5dbd43ce19125032f84dbd430583f56f85a
 
 COCOAPODS: 1.3.1

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'AE4BA86F7AF0F4911A76FA134ED8D0E4'
-               BlueprintName = 'TTMVC'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'TTMVC.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5720054A56E56F25659AC7D0EB27F9F4"
+               BlueprintName = "TTMVC"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "TTMVC.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

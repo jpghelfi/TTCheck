@@ -104,18 +104,24 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Flurry-iOS-SDK/Flurry_iOS_SDK.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TTMVC/TTMVC.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Flurry-iOS-SDK/Flurry_iOS_SDK.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TTMVC/TTMVC.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

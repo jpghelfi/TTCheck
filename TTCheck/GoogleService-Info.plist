@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>775312745237-k9q3bouq17a2hu25lp3h9257lvkq0446.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.775312745237-k9q3bouq17a2hu25lp3h9257lvkq0446</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDiygRUAf889iPeI2LygTALagG_MWmBqoA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>775312745237</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>juanpabloghelfi.TTCheck</string>
+	<key>PROJECT_ID</key>
+	<string>ttcheck-2f024</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ttcheck-2f024.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:775312745237:ios:e40b5882228ae1f9</string>
+	<key>DATABASE_URL</key>
+	<string>https://ttcheck-2f024.firebaseio.com</string>
+</dict>
+</plist>

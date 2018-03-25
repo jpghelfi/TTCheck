@@ -12,6 +12,9 @@ target 'TTCheck' do
   pod 'lottie-ios'
   pod 'Flurry-iOS-SDK/FlurrySDK' #Analytics Pod
   pod 'Flurry-iOS-SDK/FlurryAds' #Advertising Pod (requires Analytics)
+  pod 'Firebase'
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
   
   # Pods for TTCheck
 

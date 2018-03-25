@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AB1FCD699B005B09039C554AF39D6611"
+               BlueprintIdentifier = "D2FD7268E75E23C56854602C03090803"
                BuildableName = "Pods_TTCheck.framework"
                BlueprintName = "Pods-TTCheck"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AB1FCD699B005B09039C554AF39D6611"
+            BlueprintIdentifier = "D2FD7268E75E23C56854602C03090803"
             BuildableName = "Pods_TTCheck.framework"
             BlueprintName = "Pods-TTCheck"
             ReferencedContainer = "container:Pods.xcodeproj">

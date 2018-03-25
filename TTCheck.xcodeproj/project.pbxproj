@@ -25,6 +25,11 @@
 		E822D9681FC20BE500E01E06 /* ApiDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E822D9671FC20BE500E01E06 /* ApiDTO.swift */; };
 		E822D96A1FC20C4600E01E06 /* StatusDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E822D9691FC20C4600E01E06 /* StatusDTO.swift */; };
 		E825697CD5ED8D3ADB53FF2B /* Pods_TTCheck_wachOS_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7FF2C9D8806386A0579169 /* Pods_TTCheck_wachOS_Extension.framework */; };
+		E8475B8920681A9300D91203 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8475B8820681A9200D91203 /* GoogleService-Info.plist */; };
+		E8475B8A20681A9300D91203 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8475B8820681A9200D91203 /* GoogleService-Info.plist */; };
+		E8475B8B20681A9300D91203 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8475B8820681A9200D91203 /* GoogleService-Info.plist */; };
+		E8475B8C20681A9300D91203 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8475B8820681A9200D91203 /* GoogleService-Info.plist */; };
+		E8475B8D20681A9300D91203 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8475B8820681A9200D91203 /* GoogleService-Info.plist */; };
 		E86AA8561FC9CB4B00718243 /* AddMonitorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA8551FC9CB4B00718243 /* AddMonitorTableViewCell.swift */; };
 		E86AA8591FC9DE5400718243 /* NewMonitorDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA8581FC9DE5400718243 /* NewMonitorDTO.swift */; };
 		E86AA85B1FC9E17D00718243 /* AddMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA85A1FC9E17D00718243 /* AddMonitorViewController.swift */; };
@@ -140,6 +145,8 @@
 		E822D95F1FC20AE600E01E06 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		E822D9671FC20BE500E01E06 /* ApiDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDTO.swift; sourceTree = "<group>"; };
 		E822D9691FC20C4600E01E06 /* StatusDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusDTO.swift; sourceTree = "<group>"; };
+		E8475B8820681A9200D91203 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E8475B8E20681B9100D91203 /* TTCheck.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TTCheck.entitlements; sourceTree = "<group>"; };
 		E86AA8551FC9CB4B00718243 /* AddMonitorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMonitorTableViewCell.swift; sourceTree = "<group>"; };
 		E86AA8581FC9DE5400718243 /* NewMonitorDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMonitorDTO.swift; sourceTree = "<group>"; };
 		E86AA85A1FC9E17D00718243 /* AddMonitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMonitorViewController.swift; sourceTree = "<group>"; };
@@ -268,6 +275,8 @@
 		E822D92B1FC2078600E01E06 /* TTCheck */ = {
 			isa = PBXGroup;
 			children = (
+				E8475B8E20681B9100D91203 /* TTCheck.entitlements */,
+				E8475B8820681A9200D91203 /* GoogleService-Info.plist */,
 				E8DE33951FC2345C004F0A13 /* utils */,
 				E822D9611FC20B6900E01E06 /* dto */,
 				E822D9621FC20B7300E01E06 /* dao */,
@@ -540,6 +549,14 @@
 					E822D9281FC2078600E01E06 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					E822D93F1FC2078700E01E06 = {
 						CreatedOnToolsVersion = 9.0;
@@ -593,6 +610,7 @@
 				E822D9371FC2078600E01E06 /* Assets.xcassets in Resources */,
 				E822D9321FC2078600E01E06 /* Main.storyboard in Resources */,
 				E86AB9731FCB5F040085F692 /* done.json in Resources */,
+				E8475B8920681A9300D91203 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,6 +618,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8475B8A20681A9300D91203 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +626,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8475B8B20681A9300D91203 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,6 +636,7 @@
 			files = (
 				E8B521CE1FCE485B00131AEE /* Assets.xcassets in Resources */,
 				E8B521CC1FCE485B00131AEE /* Interface.storyboard in Resources */,
+				E8475B8C20681A9300D91203 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,6 +646,7 @@
 			files = (
 				8D3582BB1FDF2A3500193D2E /* Assets.xcassets in Resources */,
 				E8B521E01FCE485B00131AEE /* Assets.xcassets in Resources */,
+				E8475B8D20681A9300D91203 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -640,19 +662,25 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-TTCheck/Pods-TTCheck-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Flurry-iOS-SDK/Flurry_iOS_SDK.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 				"${BUILT_PRODUCTS_DIR}/TTMVC/TTMVC.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flurry_iOS_SDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTMVC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1060,6 +1088,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = TTCheck/TTCheck.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9DMM723BKP;
@@ -1081,6 +1110,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = TTCheck/TTCheck.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9DMM723BKP;
