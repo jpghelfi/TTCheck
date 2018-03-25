@@ -35,14 +35,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate , MessagingDelegate, UNUse
         // Replace YOUR_API_KEY with the api key in the downloaded package
         Flurry.startSession("M9K666BQ7FT7NFW5MMMM", with: builder)
         
+        FirebaseApp.configure()
+
         UNUserNotificationCenter.current().requestAuthorization(options:[.alert, .badge, .sound]) { (succed, error) in
             
             if error == nil{
                 print("Successful auto push")
                 UNUserNotificationCenter.current().delegate = self
                 Messaging.messaging().delegate = self
-                application.registerForRemoteNotifications()
-                FirebaseApp.configure()
+                DispatchQueue.main.async(execute: {
+                    application.registerForRemoteNotifications()
+                })
             }
         }
         
@@ -101,6 +104,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate , MessagingDelegate, UNUse
     
     func applicationWillTerminate(_ application: UIApplication) {
         self.saveContext()
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler(.alert)
     }
 
 
