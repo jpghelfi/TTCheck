@@ -22,6 +22,9 @@ class MonitorDAO: TTGenericDAO {
         params["friendly_name"] = name
         params["url"] = url
         params["type"] = type
+        params["alert_contacts"] = "2621716-2656411"
+        
+        
         
         Alamofire.request(baseURL, method: .post, parameters: params, encoding: JSONEncoding.default, headers: nil).responseJSON {
             

@@ -15,20 +15,22 @@ Install _fastlane_ using
 or alternatively using `brew cask install fastlane`
 
 # Available Actions
-### beta
-```
-fastlane beta
-```
-
-
-----
-
 ## iOS
-### ios custom_lane
+### ios number
 ```
-fastlane ios custom_lane
+fastlane ios number
 ```
-Description of what the lane does
+Push a new beta build to TestFlight
+### ios beta
+```
+fastlane ios beta
+```
+
+### ios create
+```
+fastlane ios create
+```
+
 
 ----
 

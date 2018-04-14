@@ -11,20 +11,60 @@
 
 default_platform(:ios)
 
-
 platform :ios do
-  desc "Description of what the lane does"
-  lane :custom_lane do
-    # add actions here: https://docs.fastlane.tools/actions
+  desc "Push a new beta build to TestFlight"
+
+  lane :number do
+  	latest_testflight_build_number
+  end	
+
+  lane :beta do
+#    ENV[FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD] = 'xcia-dtol-rkps-vspt'
+	build_number = latest_testflight_build_number.to_i
+    increment_build_number(build_number:  build_number + 1, xcodeproj: "TTCheck.xcodeproj")
+    ENV['DEVELOPER_DIR'] = '/Applications/Xcode92.app/Contents/Developer'
+    #get_certificates           # invokes cert
+  	#get_provisioning_profile
+    build_app(workspace: "TTCheck.xcworkspace", scheme: "TTCheck")
+    upload_to_testflight(skip_waiting_for_build_processing: true)
+    slack(
+  			message: "TTCheck #" + build_number.to_s,
+  			channel: "#builds",  
+  			success: true,  
+  			slack_url: "https://hooks.slack.com/services/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") 
   end
+
+  lane :create do
+  produce(
+    username: 'juanpablo.ghelfi@gmail.com',
+    app_identifier: 'com.jotape.app',
+    app_name: 'TestJP',
+    language: 'English',
+    app_version: '1.0',
+    sku: '3009028630090',
+    team_name: 'Juan Pablo Ghelfi', # only necessary when in multiple teams
+
+    # Optional
+    # App services can be enabled during app creation
+    enable_services: {
+      app_group: "off",               # Valid values: "on", "off"
+      apple_pay: "off",               # Valid values: "on", "off"
+      associated_domains: "off",      # Valid values: "on", "off"
+      data_protection: "complete",   # Valid values: "complete", "unlessopen", "untilfirstauth",
+      health_kit: "off",              # Valid values: "on", "off"
+      home_kit: "off",                # Valid values: "on", "off"
+      wireless_accessory: "off",      # Valid values: "on", "off"
+      inter_app_audio: "off",         # Valid values: "on", "off"
+      passbook: "off",                # Valid values: "on", "off"
+      push_notification: "on",       # Valid values: "on", "off"
+      siri_kit: "off",                # Valid values: "on", "off"
+      vpn_configuration: "off",       # Valid values: "on", "off"
+      network_extension: "off",       # Valid values: "on", "off"
+      hotspot: "off",                 # Valid values: "on", "off"
+      multipath: "off",               # Valid values: "on", "off"
+      nfc_tag_reading: "off",         # Valid values: "on", "off"
+    }
+  )
 end
 
-lane :beta do
-  increment_build_number(
-    build_number: latest_testflight_build_number + 1,
-    xcodeproj: "TTCheck.xcodeproj")
-  build_app(scheme: "TTCheck")
-  ENV["FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD"] = "mqhp-aaph-egvw-mhqd"
-  ENV["PILOT_USERNAME"] = "juanpablo.ghelfi@gmail.com"
-  upload_to_testflight(skip_waiting_for_build_processing: true)
 end

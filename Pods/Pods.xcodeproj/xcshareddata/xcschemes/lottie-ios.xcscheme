@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "424F8266CE60241CE98F441EBFE5C9C4"
-               BuildableName = "Pods_TTCheck.framework"
-               BlueprintName = "Pods-TTCheck"
+               BlueprintIdentifier = "8386817F9A5E38AB99F1AA49CD86EB76"
+               BuildableName = "Lottie.framework"
+               BlueprintName = "lottie-ios"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "424F8266CE60241CE98F441EBFE5C9C4"
-            BuildableName = "Pods_TTCheck.framework"
-            BlueprintName = "Pods-TTCheck"
+            BlueprintIdentifier = "8386817F9A5E38AB99F1AA49CD86EB76"
+            BuildableName = "Lottie.framework"
+            BlueprintName = "lottie-ios"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -1,6 +1,8 @@
-app_identifier "juanpabloghelfi.TTCheck"
-apple_id "juanpablo.ghelfi@gmail.com"
+app_identifier("juanpabloghelfi.TTCheck") # The bundle identifier of your app
+apple_id("juanpablo.ghelfi@gmail.com") # Your Apple email address
 
+#itc_team_id "118759032" # iTunes Connect Team ID
+#team_id "9DMM723BKP" # Developer Portal Team ID
 
 # For more information about the Appfile, see:
 #     https://docs.fastlane.tools/advanced/#appfile
