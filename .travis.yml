@@ -3,8 +3,8 @@ osx_image: xcode9.2
 cache:
   - bundler
 before_install:
-- gem install cocoapods-acknowledgements
-- gem install cocoapods
-- pod update
+# - gem install cocoapods-acknowledgements
+# - gem install cocoapods
+# - pod update
 script:
   - fastlane beta

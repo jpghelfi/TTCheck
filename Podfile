@@ -32,12 +32,7 @@ end
 
 target 'TTCheck-wachOS Extension' do
     use_frameworks!
-    
-    
     pod 'Alamofire'
-
-
-    
 end
 
 post_install do |installer|
