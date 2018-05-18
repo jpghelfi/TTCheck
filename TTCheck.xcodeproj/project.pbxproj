@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		55F3CBE1173717A6B13AC6DE /* Pods_TTCheckUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FC1EB5BF5B68C185B29A49E /* Pods_TTCheckUITests.framework */; };
 		8D3582BB1FDF2A3500193D2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8B521CD1FCE485B00131AEE /* Assets.xcassets */; };
-		953308BCF3871DE19C1FECC0 /* Pods_TTCheckTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17FD70F9D137289DB80196C /* Pods_TTCheckTests.framework */; };
 		A3010F658690F07B23444F5A /* Pods_TTCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05722EB2448A0C08F1F5AA45 /* Pods_TTCheck.framework */; };
 		E816AFBC1FC37ACF00F23B93 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E816AFBB1FC37ACF00F23B93 /* ApiService.swift */; };
 		E81713551FDDB105002950C3 /* complicationManifest.json in Resources */ = {isa = PBXBuildFile; fileRef = E81713541FDDB105002950C3 /* complicationManifest.json */; };
@@ -18,16 +16,12 @@
 		E822D9321FC2078600E01E06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E822D9301FC2078600E01E06 /* Main.storyboard */; };
 		E822D9351FC2078600E01E06 /* TTCheck.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E822D9331FC2078600E01E06 /* TTCheck.xcdatamodeld */; };
 		E822D9371FC2078600E01E06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E822D9361FC2078600E01E06 /* Assets.xcassets */; };
-		E822D9451FC2078700E01E06 /* TTCheckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E822D9441FC2078700E01E06 /* TTCheckTests.swift */; };
-		E822D9501FC2078700E01E06 /* TTCheckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E822D94F1FC2078700E01E06 /* TTCheckUITests.swift */; };
 		E822D95E1FC20A8900E01E06 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E822D95D1FC20A8900E01E06 /* HomeTableViewController.swift */; };
 		E822D9601FC20AE600E01E06 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E822D95F1FC20AE600E01E06 /* HomeTableViewCell.swift */; };
 		E822D9681FC20BE500E01E06 /* ApiDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E822D9671FC20BE500E01E06 /* ApiDTO.swift */; };
 		E822D96A1FC20C4600E01E06 /* StatusDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E822D9691FC20C4600E01E06 /* StatusDTO.swift */; };
 		E825697CD5ED8D3ADB53FF2B /* Pods_TTCheck_wachOS_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7FF2C9D8806386A0579169 /* Pods_TTCheck_wachOS_Extension.framework */; };
 		E8475B8920681A9300D91203 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8475B8820681A9200D91203 /* GoogleService-Info.plist */; };
-		E8475B8A20681A9300D91203 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8475B8820681A9200D91203 /* GoogleService-Info.plist */; };
-		E8475B8B20681A9300D91203 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8475B8820681A9200D91203 /* GoogleService-Info.plist */; };
 		E8475B8C20681A9300D91203 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8475B8820681A9200D91203 /* GoogleService-Info.plist */; };
 		E8475B8D20681A9300D91203 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8475B8820681A9200D91203 /* GoogleService-Info.plist */; };
 		E86AA8561FC9CB4B00718243 /* AddMonitorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86AA8551FC9CB4B00718243 /* AddMonitorTableViewCell.swift */; };
@@ -58,20 +52,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E822D9411FC2078700E01E06 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E822D9211FC2078600E01E06 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E822D9281FC2078600E01E06;
-			remoteInfo = TTCheck;
-		};
-		E822D94C1FC2078700E01E06 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E822D9211FC2078600E01E06 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E822D9281FC2078600E01E06;
-			remoteInfo = TTCheck;
-		};
 		E8B521D61FCE485B00131AEE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E822D9211FC2078600E01E06 /* Project object */;
@@ -135,10 +115,8 @@
 		E822D9341FC2078600E01E06 /* TTCheck.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TTCheck.xcdatamodel; sourceTree = "<group>"; };
 		E822D9361FC2078600E01E06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E822D93B1FC2078600E01E06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E822D9401FC2078700E01E06 /* TTCheckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTCheckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E822D9441FC2078700E01E06 /* TTCheckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTCheckTests.swift; sourceTree = "<group>"; };
 		E822D9461FC2078700E01E06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E822D94B1FC2078700E01E06 /* TTCheckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTCheckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E822D94F1FC2078700E01E06 /* TTCheckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTCheckUITests.swift; sourceTree = "<group>"; };
 		E822D9511FC2078700E01E06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E822D95D1FC20A8900E01E06 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
@@ -190,22 +168,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3010F658690F07B23444F5A /* Pods_TTCheck.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E822D93D1FC2078700E01E06 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				953308BCF3871DE19C1FECC0 /* Pods_TTCheckTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E822D9481FC2078700E01E06 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				55F3CBE1173717A6B13AC6DE /* Pods_TTCheckUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,8 +226,6 @@
 			isa = PBXGroup;
 			children = (
 				E822D9291FC2078600E01E06 /* TTCheck.app */,
-				E822D9401FC2078700E01E06 /* TTCheckTests.xctest */,
-				E822D94B1FC2078700E01E06 /* TTCheckUITests.xctest */,
 				E8B521C81FCE485B00131AEE /* TTCheck-wachOS.app */,
 				E8B521D41FCE485B00131AEE /* TTCheck-wachOS Extension.appex */,
 			);
@@ -456,48 +416,6 @@
 			productReference = E822D9291FC2078600E01E06 /* TTCheck.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E822D93F1FC2078700E01E06 /* TTCheckTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E822D9571FC2078700E01E06 /* Build configuration list for PBXNativeTarget "TTCheckTests" */;
-			buildPhases = (
-				EC70AC46CFCC7C0D01006B63 /* [CP] Check Pods Manifest.lock */,
-				E822D93C1FC2078700E01E06 /* Sources */,
-				E822D93D1FC2078700E01E06 /* Frameworks */,
-				E822D93E1FC2078700E01E06 /* Resources */,
-				C552525DC4A06D530D77C1A7 /* [CP] Embed Pods Frameworks */,
-				CC2EB21C833C4F9B2BE9DC12 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E822D9421FC2078700E01E06 /* PBXTargetDependency */,
-			);
-			name = TTCheckTests;
-			productName = TTCheckTests;
-			productReference = E822D9401FC2078700E01E06 /* TTCheckTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		E822D94A1FC2078700E01E06 /* TTCheckUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E822D95A1FC2078700E01E06 /* Build configuration list for PBXNativeTarget "TTCheckUITests" */;
-			buildPhases = (
-				B8409D8097143CCAAFE18C73 /* [CP] Check Pods Manifest.lock */,
-				E822D9471FC2078700E01E06 /* Sources */,
-				E822D9481FC2078700E01E06 /* Frameworks */,
-				E822D9491FC2078700E01E06 /* Resources */,
-				86F1A6B32115E473F0150A90 /* [CP] Embed Pods Frameworks */,
-				70D29EFD13A1EB33DDBE4C4F /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E822D94D1FC2078700E01E06 /* PBXTargetDependency */,
-			);
-			name = TTCheckUITests;
-			productName = TTCheckUITests;
-			productReference = E822D94B1FC2078700E01E06 /* TTCheckUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		E8B521C71FCE485B00131AEE /* TTCheck-wachOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8B521EA1FCE485B00131AEE /* Build configuration list for PBXNativeTarget "TTCheck-wachOS" */;
@@ -558,16 +476,6 @@
 							};
 						};
 					};
-					E822D93F1FC2078700E01E06 = {
-						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
-						TestTargetID = E822D9281FC2078600E01E06;
-					};
-					E822D94A1FC2078700E01E06 = {
-						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
-						TestTargetID = E822D9281FC2078600E01E06;
-					};
 					E8B521C71FCE485B00131AEE = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
@@ -592,8 +500,6 @@
 			projectRoot = "";
 			targets = (
 				E822D9281FC2078600E01E06 /* TTCheck */,
-				E822D93F1FC2078700E01E06 /* TTCheckTests */,
-				E822D94A1FC2078700E01E06 /* TTCheckUITests */,
 				E8B521C71FCE485B00131AEE /* TTCheck-wachOS */,
 				E8B521D31FCE485B00131AEE /* TTCheck-wachOS Extension */,
 			);
@@ -611,22 +517,6 @@
 				E822D9321FC2078600E01E06 /* Main.storyboard in Resources */,
 				E86AB9731FCB5F040085F692 /* done.json in Resources */,
 				E8475B8920681A9300D91203 /* GoogleService-Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E822D93E1FC2078700E01E06 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E8475B8A20681A9300D91203 /* GoogleService-Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E822D9491FC2078700E01E06 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E8475B8B20681A9300D91203 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -735,21 +625,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTCheck-wachOS Extension/Pods-TTCheck-wachOS Extension-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		70D29EFD13A1EB33DDBE4C4F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTCheckUITests/Pods-TTCheckUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		802BDD7131CA00C2128D4629 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -768,21 +643,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTCheck-wachOS Extension/Pods-TTCheck-wachOS Extension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		86F1A6B32115E473F0150A90 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTCheckUITests/Pods-TTCheckUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		914A6E9355F463785A8AA33F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -795,72 +655,6 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-TTCheck-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B8409D8097143CCAAFE18C73 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TTCheckUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C552525DC4A06D530D77C1A7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTCheckTests/Pods-TTCheckTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CC2EB21C833C4F9B2BE9DC12 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTCheckTests/Pods-TTCheckTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EC70AC46CFCC7C0D01006B63 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TTCheckTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -893,22 +687,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E822D93C1FC2078700E01E06 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E822D9451FC2078700E01E06 /* TTCheckTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E822D9471FC2078700E01E06 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E822D9501FC2078700E01E06 /* TTCheckUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E8B521D01FCE485B00131AEE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -929,16 +707,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E822D9421FC2078700E01E06 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E822D9281FC2078600E01E06 /* TTCheck */;
-			targetProxy = E822D9411FC2078700E01E06 /* PBXContainerItemProxy */;
-		};
-		E822D94D1FC2078700E01E06 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E822D9281FC2078600E01E06 /* TTCheck */;
-			targetProxy = E822D94C1FC2078700E01E06 /* PBXContainerItemProxy */;
-		};
 		E8B521D71FCE485B00131AEE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E8B521D31FCE485B00131AEE /* TTCheck-wachOS Extension */;
@@ -1002,7 +770,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 54;
+				CURRENT_PROJECT_VERSION = 55;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -1061,7 +829,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 54;
+				CURRENT_PROJECT_VERSION = 55;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1126,76 +894,6 @@
 			};
 			name = Release;
 		};
-		E822D9581FC2078700E01E06 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 441545D32CEC69C6F3573502 /* Pods-TTCheckTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9DMM723BKP;
-				INFOPLIST_FILE = TTCheckTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jpg.TTCheckTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TTCheck.app/TTCheck";
-			};
-			name = Debug;
-		};
-		E822D9591FC2078700E01E06 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D38D6378EB761C38899030CB /* Pods-TTCheckTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9DMM723BKP;
-				INFOPLIST_FILE = TTCheckTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jpg.TTCheckTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TTCheck.app/TTCheck";
-			};
-			name = Release;
-		};
-		E822D95B1FC2078700E01E06 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 916E3DD5D6D8186485F62F97 /* Pods-TTCheckUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9DMM723BKP;
-				INFOPLIST_FILE = TTCheckUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jpg.TTCheckUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TTCheck;
-			};
-			name = Debug;
-		};
-		E822D95C1FC2078700E01E06 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C92A169C843208D1884E642 /* Pods-TTCheckUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9DMM723BKP;
-				INFOPLIST_FILE = TTCheckUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jpg.TTCheckUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TTCheck;
-			};
-			name = Release;
-		};
 		E8B521E71FCE485B00131AEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E0528CD373E5CAC855FD3651 /* Pods-TTCheck-wachOS Extension.debug.xcconfig */;
@@ -1206,7 +904,7 @@
 				DEVELOPMENT_TEAM = 9DMM723BKP;
 				INFOPLIST_FILE = "TTCheck-wachOS Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = juanpabloghelfi.TTCheck.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = juanpabloghelfi.TTCheck;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
@@ -1227,7 +925,7 @@
 				DEVELOPMENT_TEAM = 9DMM723BKP;
 				INFOPLIST_FILE = "TTCheck-wachOS Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = juanpabloghelfi.TTCheck.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = juanpabloghelfi.TTCheck;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
@@ -1247,7 +945,7 @@
 				DEVELOPMENT_TEAM = 9DMM723BKP;
 				IBSC_MODULE = TTCheck_wachOS_Extension;
 				INFOPLIST_FILE = "TTCheck-wachOS/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = juanpabloghelfi.TTCheck.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = juanpabloghelfi.TTCheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1266,7 +964,7 @@
 				DEVELOPMENT_TEAM = 9DMM723BKP;
 				IBSC_MODULE = TTCheck_wachOS_Extension;
 				INFOPLIST_FILE = "TTCheck-wachOS/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = juanpabloghelfi.TTCheck.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = juanpabloghelfi.TTCheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1293,24 +991,6 @@
 			buildConfigurations = (
 				E822D9551FC2078700E01E06 /* Debug */,
 				E822D9561FC2078700E01E06 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E822D9571FC2078700E01E06 /* Build configuration list for PBXNativeTarget "TTCheckTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E822D9581FC2078700E01E06 /* Debug */,
-				E822D9591FC2078700E01E06 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E822D95A1FC2078700E01E06 /* Build configuration list for PBXNativeTarget "TTCheckUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E822D95B1FC2078700E01E06 /* Debug */,
-				E822D95C1FC2078700E01E06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
