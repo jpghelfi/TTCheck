@@ -19,11 +19,11 @@ platform :ios do
   end	
 
  lane :beta do
-  #ENV[FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD] = 'xcia-dtol-rkps-vspt'
+    ENV[FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD] = 'xcia-dtol-rkps-vspt'
     build_number = latest_testflight_build_number.to_i
     increment_build_number(build_number:  build_number + 1, xcodeproj: "TTCheck.xcodeproj")
     ENV['DEVELOPER_DIR'] = '/Applications/Xcode92.app/Contents/Developer'
-    ENV['FASTLANE_PASSWORD'] = 'xcia-dtol-rkps-vspt'
+
     match(type: "appstore")
     gym(workspace: "TTCheck.xcworkspace", scheme: "TTCheck")
     #build_app(workspace: "TTCheck.xcworkspace", scheme: "TTCheck")
