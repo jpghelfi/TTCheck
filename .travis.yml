@@ -3,8 +3,9 @@ osx_image: xcode9.2
 cache:
   - bundler
 before_install:
-  - bundle install
-  - bundle update
-  - bundle exec pod repo update --silent
+- gem install cocoapods-acknowledgements
+- gem install cocoapods
+- "./travis/travis_appversion.sh"
+- pod update
 script:
   - fastlane beta
