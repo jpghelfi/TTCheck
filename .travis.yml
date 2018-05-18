@@ -5,7 +5,6 @@ cache:
 before_install:
 - gem install cocoapods-acknowledgements
 - gem install cocoapods
-- "./travis/travis_appversion.sh"
 - pod update
 script:
   - fastlane beta
