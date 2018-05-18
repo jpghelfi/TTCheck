@@ -1,6 +1,6 @@
 app_identifier("juanpabloghelfi.TTCheck") # The bundle identifier of your app
 apple_id("juanpablo.ghelfi@gmail.com") # Your Apple email address
-ENV['FASTLANE_PASSWORD'] = 'xcia-dtol-rkps-vspt'
+ENV['FASTLANE_PASSWORD'] = 'kmsf-xiqe-hwnc-nbtb'
 
 #itc_team_id "118759032" # iTunes Connect Team ID
 #team_id "9DMM723BKP" # Developer Portal Team ID
