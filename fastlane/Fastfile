@@ -24,9 +24,10 @@ platform :ios do
     build_number = latest_testflight_build_number.to_i
     increment_build_number(build_number:  build_number + 1, xcodeproj: "TTCheck.xcodeproj")
     ENV['DEVELOPER_DIR'] = '/Applications/Xcode92.app/Contents/Developer'
+    disable_automatic_code_signing(path: "TTCheck.xcworkspace")
     match(type: "appstore")
     gym(workspace: "TTCheck.xcworkspace", scheme: "TTCheck")
-    #build_app(workspace: "TTCheck.xcworkspace", scheme: "TTCheck")
+    enable_automatic_code_signing(path: "TTCheck.xcworkspace")
     upload_to_testflight(skip_waiting_for_build_processing: true)
     slack(
   			message: "TTCheck #" + build_number.to_s,
