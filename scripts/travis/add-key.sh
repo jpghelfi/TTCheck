@@ -10,4 +10,4 @@ security import ./scripts/certs/dist.p12 -k ~/Library/Keychains/ios-build.keycha
 
 # Put the provisioning profile in place
 mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
-cp "./scripts/profile/$PROFILE_NAME.mobileprovision" ~/Library/MobileDevice/Provisioning\ Profiles/
+cp "./scripts/profile/$jpgwildcard2018.mobileprovision" ~/Library/MobileDevice/Provisioning\ Profiles/
