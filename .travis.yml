@@ -2,10 +2,11 @@ language: swift
 osx_image: xcode9.2
 before_install:
   - bundle install
-  - ./scripts/travis/add-key.sh
-
+  - chmod +x scripts/travis/add-key.sh
+  - chmod +x scripts/travis/remove-key.sh
+  - scripts/travis/add-key.sh
 script:
-  - fastlane beta
+  - bundle exec fastlane beta
 env:
   global:
   - APPNAME="TTCheck"
