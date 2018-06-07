@@ -98,6 +98,7 @@
 		441545D32CEC69C6F3573502 /* Pods-TTCheckTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTCheckTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTCheckTests/Pods-TTCheckTests.debug.xcconfig"; sourceTree = "<group>"; };
 		54695CF465022CE3D98A0950 /* Pods-TTCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTCheck.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTCheck/Pods-TTCheck.release.xcconfig"; sourceTree = "<group>"; };
 		6FC1EB5BF5B68C185B29A49E /* Pods_TTCheckUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTCheckUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D51057120C89B46000327E7 /* TTCheck-wachOS Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TTCheck-wachOS Extension.entitlements"; sourceTree = "<group>"; };
 		916E3DD5D6D8186485F62F97 /* Pods-TTCheckUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTCheckUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTCheckUITests/Pods-TTCheckUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9C92A169C843208D1884E642 /* Pods-TTCheckUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTCheckUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTCheckUITests/Pods-TTCheckUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C728DCC444AC439E83705783 /* Pods-TTCheck-wachOS Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTCheck-wachOS Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTCheck-wachOS Extension/Pods-TTCheck-wachOS Extension.release.xcconfig"; sourceTree = "<group>"; };
@@ -341,6 +342,7 @@
 		E8B521D81FCE485B00131AEE /* TTCheck-wachOS Extension */ = {
 			isa = PBXGroup;
 			children = (
+				8D51057120C89B46000327E7 /* TTCheck-wachOS Extension.entitlements */,
 				E8B521F41FCE4CF300131AEE /* dto */,
 				E8B521F51FCE4CF900131AEE /* dao */,
 				E8B521F81FCE4D1600131AEE /* service */,
@@ -466,7 +468,7 @@
 				TargetAttributes = {
 					E822D9281FC2078600E01E06 = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -478,11 +480,19 @@
 					};
 					E8B521C71FCE485B00131AEE = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					E8B521D31FCE485B00131AEE = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -770,7 +780,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 55;
+				CURRENT_PROJECT_VERSION = 56;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -829,7 +839,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 55;
+				CURRENT_PROJECT_VERSION = 56;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -858,15 +868,15 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = TTCheck/TTCheck.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9DMM723BKP;
 				INFOPLIST_FILE = TTCheck/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = juanpabloghelfi.TTCheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1ca9c01d-61bf-434e-9232-98351141f04e";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development juanpabloghelfi.TTCheck";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -880,15 +890,15 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = TTCheck/TTCheck.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9DMM723BKP;
 				INFOPLIST_FILE = TTCheck/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = juanpabloghelfi.TTCheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1ca9c01d-61bf-434e-9232-98351141f04e";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development juanpabloghelfi.TTCheck";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -899,15 +909,16 @@
 			baseConfigurationReference = E0528CD373E5CAC855FD3651 /* Pods-TTCheck-wachOS Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "TTCheck-wachOS Extension/TTCheck-wachOS Extension.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9DMM723BKP;
 				INFOPLIST_FILE = "TTCheck-wachOS Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = juanpabloghelfi.TTCheck;
+				PRODUCT_BUNDLE_IDENTIFIER = juanpabloghelfi.TTCheck.watchkit.extension;
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "1ca9c01d-61bf-434e-9232-98351141f04e";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development juanpabloghelfi.TTCheck";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -921,15 +932,16 @@
 			baseConfigurationReference = C728DCC444AC439E83705783 /* Pods-TTCheck-wachOS Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "TTCheck-wachOS Extension/TTCheck-wachOS Extension.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9DMM723BKP;
 				INFOPLIST_FILE = "TTCheck-wachOS Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = juanpabloghelfi.TTCheck;
+				PRODUCT_BUNDLE_IDENTIFIER = juanpabloghelfi.TTCheck.watchkit.extension;
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "1ca9c01d-61bf-434e-9232-98351141f04e";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development juanpabloghelfi.TTCheck";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -943,14 +955,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9DMM723BKP;
 				IBSC_MODULE = TTCheck_wachOS_Extension;
 				INFOPLIST_FILE = "TTCheck-wachOS/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = juanpabloghelfi.TTCheck;
+				PRODUCT_BUNDLE_IDENTIFIER = juanpabloghelfi.TTCheck.watchkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1ca9c01d-61bf-434e-9232-98351141f04e";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development juanpabloghelfi.TTCheck";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -964,14 +977,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9DMM723BKP;
 				IBSC_MODULE = TTCheck_wachOS_Extension;
 				INFOPLIST_FILE = "TTCheck-wachOS/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = juanpabloghelfi.TTCheck;
+				PRODUCT_BUNDLE_IDENTIFIER = juanpabloghelfi.TTCheck.watchkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1ca9c01d-61bf-434e-9232-98351141f04e";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development juanpabloghelfi.TTCheck";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
