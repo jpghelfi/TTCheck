@@ -9,6 +9,6 @@ script:
   - bundle exec fastlane beta
 env:
   global:
-  - APPNAME="TTCheck"
+  - APP_NAME="TTCheck"
   - 'DEVELOPER_NAME="iPhone Distribution: Juan Pablo Ghelfi (CPHHXZDB3B)"'
-  - PROFILE_UUID="jpgwildcard2018"
+  - PROFILE_NAME="jpgwildcard2018"
