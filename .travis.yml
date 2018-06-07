@@ -2,5 +2,12 @@ language: swift
 osx_image: xcode9.2
 before_install:
   - bundle install
+  - ./scripts/travis/add-key.sh
+
 script:
   - fastlane beta
+env:
+  global:
+  - APPNAME="TTCheck"
+  - 'DEVELOPER_NAME="iPhone Distribution: Juan Pablo Ghelfi (CPHHXZDB3B)"'
+  - PROFILE_UUID="jpgwildcard2018"
