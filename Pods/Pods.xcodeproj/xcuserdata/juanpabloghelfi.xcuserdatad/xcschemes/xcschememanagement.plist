@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Alamofire-iOS.xcscheme</key>
+		<key>Alamofire-iOS 2.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -16,7 +16,7 @@
 			<key>orderHint</key>
 			<integer>11</integer>
 		</dict>
-		<key>Alamofire-watchOS.xcscheme</key>
+		<key>Alamofire-watchOS 2.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -28,7 +28,7 @@
 			<key>orderHint</key>
 			<integer>12</integer>
 		</dict>
-		<key>Flurry-iOS-SDK.xcscheme</key>
+		<key>Flurry-iOS-SDK 2.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -40,7 +40,14 @@
 			<key>orderHint</key>
 			<integer>13</integer>
 		</dict>
-		<key>Pods-TTCheck-wachOS Extension.xcscheme</key>
+		<key>Pods-TTCheck 2.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Pods-TTCheck-wachOS Extension 2.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -52,19 +59,12 @@
 			<key>orderHint</key>
 			<integer>16</integer>
 		</dict>
-		<key>Pods-TTCheck.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
-		</dict>
 		<key>Pods-TTCheck.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>15</integer>
 		</dict>
-		<key>Pods-TTCheckTests.xcscheme</key>
+		<key>Pods-TTCheckTests 2.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -76,7 +76,7 @@
 			<key>orderHint</key>
 			<integer>17</integer>
 		</dict>
-		<key>Pods-TTCheckUITests.xcscheme</key>
+		<key>Pods-TTCheckUITests 2.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -88,7 +88,7 @@
 			<key>orderHint</key>
 			<integer>18</integer>
 		</dict>
-		<key>PureLayout.xcscheme</key>
+		<key>PureLayout 2.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -100,7 +100,7 @@
 			<key>orderHint</key>
 			<integer>19</integer>
 		</dict>
-		<key>SwipeCellKit.xcscheme</key>
+		<key>SwipeCellKit 2.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -112,7 +112,7 @@
 			<key>orderHint</key>
 			<integer>20</integer>
 		</dict>
-		<key>TTMVC.xcscheme</key>
+		<key>TTMVC 2.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -124,7 +124,7 @@
 			<key>orderHint</key>
 			<integer>21</integer>
 		</dict>
-		<key>lottie-ios.xcscheme</key>
+		<key>lottie-ios 2.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "424F8266CE60241CE98F441EBFE5C9C4"
+               BlueprintIdentifier = "D2FD7268E75E23C56854602C03090803"
                BuildableName = "Pods_TTCheck.framework"
                BlueprintName = "Pods-TTCheck"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "424F8266CE60241CE98F441EBFE5C9C4"
+            BlueprintIdentifier = "D2FD7268E75E23C56854602C03090803"
             BuildableName = "Pods_TTCheck.framework"
             BlueprintName = "Pods-TTCheck"
             ReferencedContainer = "container:Pods.xcodeproj">
