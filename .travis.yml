@@ -10,5 +10,5 @@ script:
 env:
   global:
   - APP_NAME="TTCheck"
-  - 'DEVELOPER_NAME="iPhone Distribution: Juan Pablo Ghelfi (CPHHXZDB3B)"'
-  - PROFILE_NAME="jpgwildcard2018"
+  - 'DEVELOPER_NAME="iPhone Distribution: Juan Pablo Ghelfi (9DMM723BKP)"'
+  - PROFILE_NAME="devprovjp1526"
