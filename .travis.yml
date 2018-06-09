@@ -11,4 +11,4 @@ env:
   global:
   - APP_NAME="TTCheck"
   - 'DEVELOPER_NAME="iPhone Distribution: Juan Pablo Ghelfi (9DMM723BKP)"'
-  - PROFILE_NAME="devprovjp1526"
+  - PROFILE_NAME="devprofiledist"
