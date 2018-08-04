@@ -12,3 +12,4 @@ security import ./scripts/travis/dist.p12 -k ~/Library/Keychains/ios-build.keych
 mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
 cp ./scripts/travis/profile/* ~/Library/MobileDevice/Provisioning\ Profiles/
 security set-key-partition-list -S apple-tool:,apple: -s -k travis ios-build.keychain
+
