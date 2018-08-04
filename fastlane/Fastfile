@@ -21,14 +21,17 @@ platform :ios do
   desc "Push a new beta build to TestFlight"
   
 	lane :beta do
-	  	#ENV['FASTLANE_SESSION'] = '---\n- !ruby/object:HTTP::Cookie\n  name: DES58b3a33de09357d32a87319c6e798ed68\n  value: HSARMTKNSRVTWFlaUxHvVrEMFN3GnwgSU1pYhdVypU5klvcmT6lEeApQIn0C+WOAxNZ2SSGJDpcO8jlY1E2tdJnezdMzcX+sLz0IoNEU5IL4VhNuzlyHAJXbZ1g+ZEHoSjneqw==SRVT\n  domain: idmsa.apple.com\n  for_domain: true\n  path: "/"\n  secure: true\n  httponly: true\n  expires: \n  max_age: 2592000\n  created_at: 2018-06-07 13:40:36.614298000 -03:00\n  accessed_at: 2018-06-07 14:02:14.523722000 -03:00\n- !ruby/object:HTTP::Cookie\n  name: dqsid\n  value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJLT0pUcE94RlJzM01IX25jcHJCSnBRIn0.lpm5-DSBLJBMmk1Ux9hFQg3-QbdR2Crnde2FyCDSZMo\n  domain: olympus.itunes.apple.com\n  for_domain: false\n  path: "/"\n  secure: true\n  httponly: true\n  expires: \n  max_age: 1800\n  created_at: &1 2018-06-07 14:02:16.669233000 -03:00\n  accessed_at: *1\n'
-	  	#ENV['FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD'] = 'ynwu-wspc-nwgt-bomh'
 	    ENV['FASTLANE_PASSWORD'] = 'jpyiooOO11'
 	    build_number = latest_testflight_build_number.to_i
 	    increment_build_number(build_number:  build_number + 1, xcodeproj: "TTCheck.xcodeproj")
 	    get_provisioning_profile
 	    build_app(
 	    	workspace: "TTCheck.xcworkspace",
+	    	export_method: "app-store",
+		    export_options: {
+		      provisioningProfiles: { 
+		        "juanpabloghelfi.TTCheck" => "ttcheck-prov-dist"}
+    		}
 	    	scheme: "TTCheck")
 	    upload_to_testflight(skip_waiting_for_build_processing: true)
 	    slack(
