@@ -21,19 +21,14 @@ platform :ios do
   desc "Push a new beta build to TestFlight"
   
 	lane :beta do
-	    ENV['FASTLANE_PASSWORD'] = 'jpyiooOO11'
+	    #ENV['FASTLANE_PASSWORD'] = 'jpyiooOO11'
 	    build_number = latest_testflight_build_number.to_i
 	    increment_build_number(build_number:  build_number + 1, xcodeproj: "TTCheck.xcodeproj")
-	    build_app(
-	    	workspace: "TTCheck.xcworkspace",
-	    	export_method: "app-store",
-		    export_options: {
-		      provisioningProfiles: { 
-		        "juanpabloghelfi.TTCheck" => "ttcheck-prov-dist"}
-
-    		},
-	    	scheme: "TTCheck")
-	    upload_to_testflight(skip_waiting_for_build_processing: true)
+	    match(type: "appstore")
+	    ENV['DEVELOPER_DIR'] = '/Applications/Xcode.app/Contents/Developer'
+    	build_app(workspace: "TTCheck.xcworkspace", scheme: "TTCheck")
+	    upload_to_testflight(skip_waiting_for_build_processing: true,
+	    	itc_provider: "9DMM723BKP")
 	    slack(
 	  			message: "TTCheck #" + build_number.to_s,
 	  			channel: "#builds",  
